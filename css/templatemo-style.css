@@ -3392,7 +3392,7 @@ hr {
 }
 
 .tm-about-box-2-title {
-  
+  color: #000;
   text-align: left;
   margin-bottom: 30px;
 }
@@ -4472,3 +4472,372 @@ hr {
     text-transform: uppercase;
   }
 }
+
+/*Contact Us*/
+
+.inner-container {
+  position: relative;
+  z-index: 1;
+  background-color: #03476e;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, .1)
+}
+
+.form-column {
+  position: relative;
+  padding: 0 0 0 15px
+}
+
+.form-column .inner-column {
+  position: relative;
+  padding: 60px 45px 30px 45px;
+  background-color: #fff
+}
+
+
+.contact-form {
+  position: relative
+}
+
+@media only screen and (max-width: 464px) {
+  .contact-form {
+    margin: 0 -50px !important;
+    margin-left: -65px !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .contact-form {
+    margin: 0 -30px !important;
+    margin-left: -45px !important;
+  }
+}
+
+
+.contact-form .form-group {
+  position: relative;
+  margin-bottom: 20px
+}
+
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form textarea {
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+  height: 60px !important;
+  color: #222;
+  font-size: 14px !important;
+  line-height: 38px !important;
+  padding: 10px 30px !important;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -webkit-transition: all .3s ease
+}
+
+.contact-form input[type=text]:focus,
+.contact-form input[type=email]:focus,
+.contact-form textarea:focus {
+  border-color: #03476e
+}
+
+.contact-form .form-group textarea {
+  max-height: 250px !important;
+  resize: none !important;
+  margin-left: 0px !important;
+  width: 100% !important;
+}
+
+@media screen and (min-width: 1025px) { 
+  .contact-form .form-group textarea {
+    min-width: 632px;
+}
+}
+
+@media screen and (min-width: 835px) and (max-width: 1024px) { 
+  .contact-form .form-group textarea {
+    min-width: 500px;
+}
+}
+
+@media screen and (min-width: 767px) and (max-width: 834px) { 
+  .contact-form .form-group textarea {
+    min-width: 352px;
+
+}
+}
+
+@media screen and (min-width: 890px) and (max-width: 1024px) { 
+  
+  .contact-form .form-group textarea {
+  margin-left: 0px !important;
+}
+}
+
+.contact-form .theme-btn {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
+  text-transform: capitalize;
+  padding: 16px 39px;
+  border: 2px solid #03476e;
+  font-family: Arimo, sans-serif;
+  background: #03476e;
+  display: inline-block;
+  position: relative;
+  line-height: 24px;
+  cursor: pointer;
+  color: #fff
+}
+
+.contact-form .theme-btn:hover {
+  color: #03476e;
+  border-color: #03476e;
+  background: 0 0
+}
+
+.contact-form input.error,
+.contact-form select.error,
+.contact-form textarea.error {
+  border-color: red !important
+}
+
+.contact-form label.error {
+  display: block;
+  line-height: 24px;
+  padding: 5px 0 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: red;
+  font-weight: 500
+}
+
+.info-column {
+  position: relative
+}
+
+
+.info-column .inner-column {
+  position: relative;
+  padding: 30px 10px
+}
+
+.info-column h2 {
+  position: relative;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4em;
+  margin-bottom: 25px
+}
+
+.info-column .list-info {
+  position: relative;
+  margin-bottom: 60px;
+  list-style-type: none;
+}
+
+.info-column .list-info li {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.5em;
+  padding-left: 45px;
+  font-family: "Jotia W00 Regular", serif !important;
+}
+
+
+@media screen and (min-width: 767px) and (max-width: 835px) { 
+  
+  .info-column .list-info li {
+    font-size: 12px;
+    padding-left: 35px;
+}
+
+
+}
+
+
+#pn {
+  padding-top: 12px;
+}
+
+
+.info-column .list-info li:last-child {
+  margin-bottom: 0
+}
+
+.info-column .list-info li i {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  color: #fff;
+  font-size: 30px
+}
+
+
+.social-icon-four {
+  position: relative
+}
+
+.social-icon-four li {
+  position: relative;
+  margin-right: 12px;
+  display: inline-block;
+  font-family: "Jotia W00 Regular", serif !important;
+}
+
+.social-icon-four li.follow {
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Jotia W00 Regular", serif !important;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1025px) { 
+  
+  .social-icon-four li.follow {
+    
+  margin-top: -30px;
+}
+
+.info-column .inner-column {
+padding-top: 10px;
+}
+}
+
+
+
+.social-icon-four li a {
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  -webkit-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease
+}
+
+.social-icon-four li a:hover {
+  color: #222
+}
+
+
+/*FAQS*/
+
+#faq1 {
+  text-align: left;
+
+  ul {
+    font-family: "Jotia W00 Regular", serif;
+  }
+  li {
+    font-family: "Jotia W00 Regular", serif;
+  }
+}
+
+
+
+/*TC*/
+
+#tc {
+  margin-bottom: 2px !important;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/*News*/
+
+.news-options-container {
+  margin: 10em 0 2em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  text-align: center;
+}
+
+.option {
+  background-color: #d5d5d5;
+  border: none;
+  cursor: pointer;
+  padding: 0.8em 1.5em;
+  border-radius: 0.5em;
+  border: none;
+  text-transform: capitalize;
+  font-family: "Jotia W00 Regular", serif;
+}
+
+option {
+  font-family: "Jotia W00 Regular", serif;
+}
+.news-container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1em;
+}
+
+.news-card {
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  box-shadow: 0 0 15px rgba(85, 85, 85, 0.2);
+  margin: 1em 0;
+  border-radius: 15px;
+  font-family: "Jotia W00 Regular", serif;
+}
+.news-card img {
+  border-radius: 15px 15px 0 0;
+}
+.news-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+  font-size: 15px;
+}
+.news-title {
+  font-weight: 600;
+  color: #0b0028;
+}
+.news-description {
+  color: #6f6f6f;
+  text-align: justify;
+  margin: 0.8em 0 1em 0;
+}
+.view-button {
+  position: relative;
+  text-decoration: none;
+  background-color: #03476e;
+  color: #ffffff;
+  width: 7em;
+  text-align: center;
+  padding: 0.3em 0.2em;
+  border-radius: 5px;
+}
+.news-active {
+  background-color: #03476e;
+  color: #ffffff;
+}
+@media only screen and (max-width: 768px) {
+  .news-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.news-image-container {
+  max-width: 200px;
+
+  img {
+    width: 100%;
+  }
+}
+
