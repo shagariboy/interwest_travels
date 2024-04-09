@@ -15,8 +15,8 @@ display: block;
 
 footer .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 56px;
+  padding-left: 56px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -75,7 +75,8 @@ footer .social-links li a {
   text-decoration: none;
 }
 
-footer .social-links li a .fa {
+footer .social-links li a .fa,
+footer .social-links li a .fa-brands  {
   border: 1px solid #fff;
   border-radius: 8px;
   color: #fff;
@@ -129,6 +130,13 @@ footer .useful-link li a {
   color: #fff;
   font-size: 14px;
 }
+
+footer .useful-link li a:hover {
+  text-decoration: none;
+  color: #FFA700;
+  font-size: 14px;
+}
+
 
 footer .useful-link li.links1 {
   text-decoration: none;

@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iterwest - Explore the Natural Wonders of Tanzania</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet'
+        type='text/css'>
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="../css/flexslider.css" rel="stylesheet">
+    <link href="../css/templatemo-style.css" rel="stylesheet">
+    <link href="../css/scrollToTop.css" rel="stylesheet">
+    <link href="../css/hero.css" rel="stylesheet">
+    <!--Link to footer.css-->
+    <link href="../css/footer.css" rel="stylesheet">
+
+    <link href="../css/logo.css" rel="stylesheet">
+
+    <!--  Fontawesome icons -->
+    <script src="https://kit.fontawesome.com/e9cf5a296c.js" crossorigin="anonymous"></script>
+    <link href="https://db.onlinewebfonts.com/c/09fc87e1ac5bbdeb5c42b2c1ec4f780f?family=Jotia+W00+Regular"
+        rel="stylesheet">
+
+    <!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="../favicon/logo icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon/logo icon.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon/logo icon.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        #twt {
+            color: #0fc9e7;
+
+        }
+
+        #fac {
+            color: #1e549f
+        }
+
+        #pin {
+            color: #E60023;
+        }
+
+        #goog {
+            color: #4285F4;
+        }
+
+        #twtf:hover {
+            color: #0fc9e7;
+
+        }
+
+        #facf:hover {
+            color: #1e549f
+        }
+
+        #pinf:hover {
+            color: #E60023;
+        }
+
+        #googf:hover {
+            color: #4285F4;
+        }
+
+        #cardf:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.4);
+        }
+
+        /* Adding Smooth animation to WHO WE ARE SECTION */
+
+        #cardf {
+            transition: all .3s ease-in-out, box-shadow .6s;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        @media screen and (max-width: 400px) {
+
+            #cardf {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .d-flex {
+            display: flex;
+            gap: 30px;
+            margin: 0 auto;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    </style>
+
+
+</head>
+
+<body class="tm-gray-bg">
+    <div id="preloader"></div>
+    <div class="scroll-up-btn">
+        <i class="fa fa-angle-up"></i>
+    </div>
+
+    <!-- Header -->
+    <div class="tm-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-3 tm-site-name-container">
+                    <a href="index.html" class="tm-site-name">
+                        <img src="../img/iterwest_travels_logo.png" width="250" height=auto id="logo">
+                    </a>
+                </div>
+                <div class="col-lg-9 col-md-8 col-sm-9">
+                    <div class="mobile-menu-icon">
+                        <div class="mobile-menu-icon-wrap">
+                            <span class="stick stick-1"></span>
+                            <span class="stick stick-2"></span>
+                            <span class="stick stick-3"></span>
+                            <span class="stick stick-4"></span>
+                            <span class="stick stick-5"></span>
+                            <span class="stick stick-6"></span>
+                        </div>
+                    </div>
+                    <nav class="tm-nav">
+                        <ul>
+                            <li><a class="upper_links" href="../index.html">Home</a></li>
+                            <li><a class="upper_links" href="../about.html">About Us</a></li>
+                            <li><a class="upper_links" href="../services.html">Our Services</a></li>
+                            <li><a class="upper_links" id="one" href="../packages.html" class="active">Packages</a></li>
+                            <li><a class="upper_links" href="../contact.html">Contact Us</a></li>
+                            <li><a class="form-btn1" id="buttonnow" type="button" href="../contact.html" >Book Now</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <section class="tm-banner">
+        <!-- Flexslider -->
+        <div class="flexslider flexslider-banner">
+            <ul class="slides">
+                <li>
+                    <div class="tm-banner-inner">
+                        <p class="tm-banner-subtitle" id="sa-title">Explore the Natural Wonders of Tanzania</p>
+
+                    </div>
+                    <img src="../img/ta-banner.png" />
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section class="tm-white-bg reveal" id="booking-section">
+        <form action="index.html" method="post" class="booking_form">
+            <h1> Booking Form </h1>
+
+            <fieldset>
+                <label for="name">Full name as it appears on passport</label>
+                <input type="text" id="name" name="user_name">
+
+                <label for="job">Country</label>
+                <select id="country" name="country_of_res">
+                    <option value="">Country of Residence</option>
+                    <option value="af">Afghanistan</option>
+                    <option value="al">Albania</option>
+                    <option value="dz">Algeria</option>
+                    <option value="as">American Samoa</option>
+                    <option value="ad">Andorra</option>
+                    <option value="ao">Angola</option>
+                    <option value="ai">Anguilla</option>
+                    <option value="aq">Antarctica</option>
+                    <option value="ag">Antigua And Barbuda</option>
+                    <option value="ar">Argentina</option>
+                    <option value="am">Armenia</option>
+                    <option value="aw">Aruba</option>
+                    <option value="au">Australia</option>
+                    <option value="at">Austria</option>
+                    <option value="az">Azerbaijan</option>
+                    <option value="bs">Bahamas</option>
+                    <option value="bh">Bahrain</option>
+                    <option value="bd">Bangladesh</option>
+                    <option value="bb">Barbados</option>
+                    <option value="by">Belarus</option>
+                    <option value="be">Belgium</option>
+                    <option value="bz">Belize</option>
+                    <option value="bj">Benin</option>
+                    <option value="bm">Bermuda</option>
+                    <option value="bt">Bhutan</option>
+                    <option value="bo">Bolivia</option>
+                    <option value="ba">Bosnia and Herzegowina</option>
+                    <option value="bw">Botswana</option>
+                    <option value="bv">Bouvet Island</option>
+                    <option value="br">Brazil</option>
+                    <option value="io">British Indian Ocean Territory</option>
+                    <option value="bn">Brunei Darussalam</option>
+                    <option value="bg">Bulgaria</option>
+                    <option value="bf">Burkina Faso</option>
+                    <option value="bi">Burundi</option>
+                    <option value="kh">Cambodia</option>
+                    <option value="cm">Cameroon</option>
+                    <option value="ca">Canada</option>
+                    <option value="cv">Cape Verde</option>
+                    <option value="ky">Cayman Islands</option>
+                    <option value="cf">Central African Republic</option>
+                    <option value="td">Chad</option>
+                    <option value="cl">Chile</option>
+                    <option value="cn">China</option>
+                    <option value="cx">Christmas Island</option>
+                    <option value="cc">Cocos (Keeling) Islands</option>
+                    <option value="co">Colombia</option>
+                    <option value="km">Comoros</option>
+                    <option value="cg">Congo, Republic of the</option>
+                    <option value="cd">Congo, the Democratic Republic o</option>
+                    <option value="ck">Cook Islands</option>
+                    <option value="cr">Costa Rica</option>
+                    <option value="ci">Cote D\'Ivoire</option>
+                    <option value="hr">Croatia</option>
+                    <option value="cu">Cuba</option>
+                    <option value="cy">Cyprus</option>
+                    <option value="cz">Czech Republic</option>
+                    <option value="dk">Denmark</option>
+                    <option value="dj">Djibouti</option>
+                    <option value="dm">Dominica</option>
+                    <option value="do">Dominican Republic</option>
+                    <option value="ec">Ecuador</option>
+                    <option value="eg">Egypt</option>
+                    <option value="sv">El Salvador</option>
+                    <option value="gq">Equatorial Guinea</option>
+                    <option value="er">Eritrea</option>
+                    <option value="ee">Estonia</option>
+                    <option value="et">Ethiopia</option>
+                    <option value="fk">Falkland Islands (Malvinas)</option>
+                    <option value="fo">Faroe Islands</option>
+                    <option value="fj">Fiji</option>
+                    <option value="fi">Finland</option>
+                    <option value="fr">France</option>
+                    <option value="gf">French Guiana</option>
+                    <option value="pf">French Polynesia</option>
+                    <option value="tf">French Southern Territories</option>
+                    <option value="ga">Gabon</option>
+                    <option value="gm">Gambia</option>
+                    <option value="ge">Georgia</option>
+                    <option value="de">Germany</option>
+                    <option value="gh">Ghana</option>
+                    <option value="gi">Gibraltar</option>
+                    <option value="gr">Greece</option>
+                    <option value="gl">Greenland</option>
+                    <option value="gd">Grenada</option>
+                    <option value="gp">Guadeloupe</option>
+                    <option value="gu">Guam</option>
+                    <option value="gt">Guatemala</option>
+                    <option value="gg">Guernsey</option>
+                    <option value="gn">Guinea</option>
+                    <option value="gw">Guinea-Bissau</option>
+                    <option value="gy">Guyana</option>
+                    <option value="ht">Haiti</option>
+                    <option value="hm">Heard Island and Mcdonald Island</option>
+                    <option value="va">Holy See (Vatican City State)</option>
+                    <option value="hn">Honduras</option>
+                    <option value="hk">Hong Kong</option>
+                    <option value="hu">Hungary</option>
+                    <option value="is">Iceland</option>
+                    <option value="in">India</option>
+                    <option value="id">Indonesia</option>
+                    <option value="ir">Iran, Islamic Republic of</option>
+                    <option value="iq">Iraq</option>
+                    <option value="ie">Ireland</option>
+                    <option value="im">Isle of man</option>
+                    <option value="il">Israel</option>
+                    <option value="it">Italy</option>
+                    <option value="jm">Jamaica</option>
+                    <option value="jp">Japan</option>
+                    <option value="je">Jersey</option>
+                    <option value="jo">Jordan</option>
+                    <option value="kz">Kazakhstan</option>
+                    <option value="ke">Kenya</option>
+                    <option value="ki">Kiribati</option>
+                    <option value="kp">Korea, Democratic People\'s Repu</option>
+                    <option value="kr">Korea, Republic of</option>
+                    <option value="kw">Kuwait</option>
+                    <option value="kg">Kyrgyzstan</option>
+                    <option value="la">Lao People\'s Democratic Republi</option>
+                    <option value="lv">Latvia</option>
+                    <option value="lb">Lebanon</option>
+                    <option value="ls">Lesotho</option>
+                    <option value="lr">Liberia</option>
+                    <option value="ly">Libyan Arab Jamahiriya</option>
+                    <option value="li">Liechtenstein</option>
+                    <option value="lt">Lithuania</option>
+                    <option value="lu">Luxembourg</option>
+                    <option value="mo">Macau</option>
+                    <option value="mk">Macedonia</option>
+                    <option value="mg">Madagascar</option>
+                    <option value="mw">Malawi</option>
+                    <option value="my">Malaysia</option>
+                    <option value="mv">Maldives</option>
+                    <option value="ml">Mali</option>
+                    <option value="mt">Malta</option>
+                    <option value="mh">Marshall Islands</option>
+                    <option value="mq">Martinique</option>
+                    <option value="mr">Mauritania</option>
+                    <option value="mu">Mauritius</option>
+                    <option value="yt">Mayotte</option>
+                    <option value="mx">Mexico</option>
+                    <option value="fm">Micronesia, Federated States of</option>
+                    <option value="md">Moldova, Republic of</option>
+                    <option value="mc">Monaco</option>
+                    <option value="mn">Mongolia</option>
+                    <option value="me">Montenegro</option>
+                    <option value="ms">Montserrat</option>
+                    <option value="ma">Morocco</option>
+                    <option value="mz">Mozambique</option>
+                    <option value="mm">Myanmar</option>
+                    <option value="na">Namibia</option>
+                    <option value="nr">Nauru</option>
+                    <option value="np">Nepal</option>
+                    <option value="nl">Netherlands</option>
+                    <option value="an">Netherlands Antilles</option>
+                    <option value="nc">New Caledonia</option>
+                    <option value="nz">New Zealand</option>
+                    <option value="ni">Nicaragua</option>
+                    <option value="ne">Niger</option>
+                    <option value="ng">Nigeria</option>
+                    <option value="nu">Niue</option>
+                    <option value="nf">Norfolk Island</option>
+                    <option value="mp">Northern Mariana Islands</option>
+                    <option value="no">Norway</option>
+                    <option value="om">Oman</option>
+                    <option value="pk">Pakistan</option>
+                    <option value="pw">Palau</option>
+                    <option value="ps">Palestinian Territory, Occupied</option>
+                    <option value="pa">Panama</option>
+                    <option value="pg">Papua New Guinea</option>
+                    <option value="py">Paraguay</option>
+                    <option value="pe">Peru</option>
+                    <option value="ph">Philippines</option>
+                    <option value="pn">Pitcairn</option>
+                    <option value="pl">Poland</option>
+                    <option value="pt">Portugal</option>
+                    <option value="pr">Puerto Rico</option>
+                    <option value="qa">Qatar</option>
+                    <option value="re">Réunion</option>
+                    <option value="ro">Romania</option>
+                    <option value="ru">Russian Federation</option>
+                    <option value="rw">Rwanda</option>
+                    <option value="bl">Saint Barthélemy</option>
+                    <option value="sh">Saint Helena</option>
+                    <option value="kn">Saint Kitts And Nevis</option>
+                    <option value="lc">Saint Lucia</option>
+                    <option value="mf">Saint Martin</option>
+                    <option value="pm">Saint Pierre and Miquelon</option>
+                    <option value="vc">Saint Vincent And The Grenadines</option>
+                    <option value="ws">Samoa</option>
+                    <option value="sm">San Marino</option>
+                    <option value="st">Sao Tome And Principe</option>
+                    <option value="sa">Saudi Arabia</option>
+                    <option value="sn">Senegal</option>
+                    <option value="rs">Serbia</option>
+                    <option value="sc">Seychelles</option>
+                    <option value="sl">Sierra Leone</option>
+                    <option value="sg">Singapore</option>
+                    <option value="sk">Slovakia</option>
+                    <option value="si">Slovenia</option>
+                    <option value="sb">Solomon Islands</option>
+                    <option value="so">Somalia</option>
+                    <option value="za">South Africa</option>
+                    <option value="gs">South Georgia and the South Sand</option>
+                    <option value="es">Spain</option>
+                    <option value="lk">Sri Lanka</option>
+                    <option value="sd">Sudan</option>
+                    <option value="sr">Suriname</option>
+                    <option value="sj">Svalbard And Jan Mayen Islands</option>
+                    <option value="sz">Swaziland</option>
+                    <option value="se">Sweden</option>
+                    <option value="ch">Switzerland</option>
+                    <option value="sy">Syrian Arab Republic</option>
+                    <option value="tw">Taiwan, Province of China</option>
+                    <option value="tj">Tajikistan</option>
+                    <option value="tz">Tanzania, United Republic of</option>
+                    <option value="th">Thailand</option>
+                    <option value="tl">Timor-Leste, Democratic Republic</option>
+                    <option value="tg">Togo</option>
+                    <option value="tk">Tokelau</option>
+                    <option value="to">Tonga</option>
+                    <option value="tt">Trinidad And Tobago</option>
+                    <option value="tn">Tunisia</option>
+                    <option value="tr">Turkey</option>
+                    <option value="tm">Turkmenistan</option>
+                    <option value="tc">Turks And Caicos Islands</option>
+                    <option value="tv">Tuvalu</option>
+                    <option value="ug">Uganda</option>
+                    <option value="ua">Ukraine</option>
+                    <option value="ae">United Arab Emirates</option>
+                    <option value="gb">United Kingdom</option>
+                    <option value="us">United States</option>
+                    <option value="uy">Uruguay</option>
+                    <option value="uz">Uzbekistan</option>
+                    <option value="vu">Vanuatu</option>
+                    <option value="ve">Venezuela</option>
+                    <option value="vn">Viet Nam</option>
+                    <option value="vg">Virgin Islands (British)</option>
+                    <option value="vi">Virgin Islands (U.S.)</option>
+                    <option value="wf">Wallis And Futuna Islands</option>
+                    <option value="eh">Western Sahara</option>
+                    <option value="ye">Yemen</option>
+                    <option value="zm">Zambia</option>
+                    <option value="zw">Zimbabwe</option>
+                    <option value="ax">Åland islands</option>
+                </select>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="mail" name="user_email">
+
+                <label for="password">Phone number</label>
+                <input type="password" id="phone_number" name="phone_number">
+
+                <label>Gender</label>
+                <div class="gender-options">
+                    <label for="under_13" class="light">Male <input type="radio" id="under_13" value="under_13"
+                            name="user_age"></label>
+                    <label for="over_13" class="light">Female <input type="radio" id="over_13" value="over_13"
+                            name="user_age"></label>
+                </div>
+
+                <label for="password">Nationality </label>
+                <input type="text" id="nationality" name="nationality">
+
+                <label for="password">Tour durations (days)</label>
+                <input type="number" id="tour_day" name="tour_day">
+
+                <label class="hotel-heading">HOTEL PREFERENCE</label>
+                <label for="password">Hotel Rating Preference </label>
+                <div class="gender-options" id="hotel-options">
+                    <div style="display: inline-flex;">
+                        <p style="width: 50px;">5 Star </p> <input type="radio" id="under_13" value="under_13"
+                            name="user_age" />
+                    </div>
+                    <div style="display: inline-flex;">
+                        <p style="width: 50px;">4 Star </p> <input type="radio" id="under_13" value="under_13"
+                            name="user_age" />
+                    </div>
+                </div>
+
+                <label for="password">Room Rating Preference </label>
+                <div class="gender-options" id="room-options">
+                    <div style="display: inline-flex;">
+                        <p style="width: 50px;">King </p> <input type="radio" id="under_13" value="under_13"
+                            name="user_age" />
+                    </div>
+                    <div style="display: inline-flex;">
+                        <p style="width: 50px;">2 Double/Queen </p> <input type="radio" id="under_13" value="under_13"
+                            name="user_age" />
+                    </div>
+                </div>
+
+                <label for="password">Number of people coming to the tour (Spacial discount if the number is more than
+                    10)</label>
+                <input type="number" id="numner_of_people_tour" name="tour_day">
+                   <label>Let us know any other activity you might need</label>
+                    <textarea></textarea>
+            </fieldset>
+            <button type="submit" class="booking_button">Book Now</button>
+
+        </form>
+    </section>
+
+
+
+
+
+
+
+    <div class="elfsight-app-7c6f77a0-6583-4877-9f5d-a8e53991b9ff" data-elfsight-app-lazy></div>
+    <!-- footer -->
+    <footer style=" ">
+        <div class="container main_view">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="#">
+                        <div class="img-container">
+                            <img src="../img/iTerwest Travels Logo 2.png">
+                        </div>
+                    </a>
+                    <ul class="social-links">
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/iterwesttravels/"><i
+                                    class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://twitter.com/iterwesttravels"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.pinterest.com/iterwesttravels"><i
+                                    class="fa fa-pinterest"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.youtube.com/iterwesttravels"><i
+                                    class="fa fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.linkedin.com/in/iterwesttravels"><i
+                                    class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://instagram.com/iterwesttravels"><i
+                                    class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    <p>Iterwest Travels is emerging as one of the leading online travel platforms based in Doha, Qatar.
+                        Our foray into the digital realm is fueled by a strong passion and a steadfast commitment to
+                        fostering sustainability within the global travel sector.</p>
+                </div>
+
+                <div class="col-lg-8 xs-mt-4 sm-mt-4 md-mt-4">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-6 xs-mt-4 sm-mt-4">
+                                    <h5>Our Services</h5>
+                                    <ul class="useful-link">
+                                        <li>
+                                            <a href="../contact.html">Flight</a>
+                                        </li>
+                                        <li>
+                                            <a href="../contact.html">Hotels</a>
+                                        </li>
+                                        <li>
+                                            <a href="../contact.html">Car Rental</a>
+                                        </li>
+                                        <li>
+                                            <a href="../contact.html">Transfer</a>
+                                        </li>
+                                        <li>
+                                            <a href="../contact.html">Holidays</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="../contact.html">Travel
+                                                Insurance</a>
+                                        </li>
+                                        <li>
+                                            <a href="../contact.html">Visa</a>
+                                        </li>
+                                        <!--<li>-->
+                                        <!--    <a href="https://www.walztravels.com/cruise">Cruise</a>-->
+                                        <!--</li>-->
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 xs-mt-4 sm-mt-4">
+                                    <h5>Quick Links</h5>
+                                    <ul class="useful-link">
+                                        <li>
+                                            <a href="../about.html">About us</a>
+                                        </li>
+                                        <li>
+                                            <a href="../contact.html">Contact us</a>
+                                        </li>
+                                        <li>
+                                            <a href="../faqs.html">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="../privacypolicy.html">Privacy Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="../tc.html">Terms &amp;
+                                                Conditions</a>
+                                        </li>
+                                        <!-- <li>
+											<a target="_blank" href="https://www.walztravels.com/Medic-Trip">Medic Trip</a>
+										</li> -->
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 id="contactush">Contact Us</h5>
+                            <ul class="useful-link">
+                                <li class="links1">
+                                    <a href="tel:9718009259">
+                                        <div class="row">
+                                            <div class="col-2 col-sm-1 col-md-2">
+                                                <div>
+                                                    <p><i class="fa fa-phone"></i></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-10 col-sm-11 col-md-10 xs-pl-0">
+                                                <p> +2348083879728</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                                <li class="links1">
+                                    <div class="row">
+                                        <div class="col-2 col-sm-1 col-md-2">
+                                            <div>
+                                                <p style="margin-top:10px"><i class="fa fa-envelope"></i></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-10 col-sm-11 col-md-10 xs-pl-0">
+                                            <p> <a href="mailto:info@walztravels.com">info@iterwesttravels.com</a>
+											</p>
+                                            <p><a href="mailto:contact@walztravels.com">contact@iterwesttravels.com</a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="links1">
+                                    <a href=""
+                                        target="_blank">
+                                        <div class="row">
+                                            <div class="col-2 col-sm-1 col-md-2">
+                                                <div>
+                                                    <p><i class="fa fa-home"></i></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-10 col-sm-11 col-md-10 xs-pl-0">
+                                                <p>Lagos, Nigeria; Doha, Qatar & Berlin, Germany</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!--		<h5 class="mt-4">Walztravels App</h5>
+							<a href="https://apps.apple.com/us/app/the-walz-travels/id1585110656#?platform=iphone" target="_blank">
+								<img src="https://www.walztravels.com/trvx-static-asset-files/images/apple-en.svg" alt="Apple Store">
+							</a>
+							<a href="https://play.google.com/store/apps/details?id=com.TheWalz.travels" target="_blank">
+								<img src="https://www.walztravels.com/trvx-static-asset-files/images/google-en.svg" alt="Play Store">
+							</a>
+
+-->
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>copyright 2024 © Interwest Travels. All rights reserved.
+                    <!--Powered by <a href="https://www.travelopro.com/" target="_balnk" style="color:#fff">TRAVELOPRO</a>-->
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- Script -->
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <script type="text/javascript" src="../js/bookingform.js"></script>
+
+    <script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script> <!-- jQuery -->
+    <script type="text/javascript" src="../js/scrollToTop.js"></script> <!-- Scroll To Top -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script> <!-- bootstrap js -->
+    <script type="text/javascript" src="../js/jquery.flexslider-min.js"></script> <!-- flexslider js -->
+    <script type="text/javascript" src="../js/templatemo-script.js"></script> <!-- Templatemo Script -->
+    <script type="text/javascript" src="../js/update-copyrightYear.js"></script> <!--Updating the copyright year-->
+    <script>
+        $(function () {
+
+            // https://css-tricks.com/snippets/jquery/smooth-scrolling/
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+        $(window).load(function () {
+            // Flexsliders
+            $('.flexslider.flexslider-banner').flexslider({
+                controlNav: false
+            });
+            $('.flexslider').flexslider({
+                animation: "slide",
+                directionNav: false,
+                slideshow: false
+            });
+        });
+    </script>
+    <!-- Preloader Script -->
+    <script type="text/javascript">
+        document.addEventListener('load', preLoader())
+
+        function preLoader() {
+            $("#preloader").delay(1000).fadeOut(1000);
+            $('body').removeClass('loading');
+        }
+    </script>
+    <script type="text/javascript" src="../js/onscrollReveal.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                slideshow: true, // Set to true to enable automatic slideshow
+                slideshowSpeed: 5000, // Set the duration between slides (in milliseconds)
+                pauseOnHover: true // Set to true to pause slideshow on hover
+            });
+        });
+    </script>
+
+</body>
+
+</html>
