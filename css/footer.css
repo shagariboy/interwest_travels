@@ -15,8 +15,8 @@ display: block;
 
 footer .container {
   width: 100%;
-  padding-right: 56px;
-  padding-left: 56px;
+  padding-right: 60px;
+  padding-left: 60px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -35,8 +35,9 @@ footer a {
 }
 
 footer .img-container {
-  max-width: 108px;
+  max-width: 208px;
   height: 75px;
+  margin-bottom: 80px;
 }
 footer img {
   vertical-align: middle;
@@ -108,11 +109,12 @@ footer h5 {
   color: #fff;
   font-size: 1.95rem;
   margin-bottom: 20px;
+  margin-top: 28px !important;
   font-family: "Jotia W00 Regular", serif;
 }
 
 #contactush {
-margin-top: 25px;
+margin-top: 43px !important;
 }
 
 footer .useful-link {
@@ -157,6 +159,19 @@ footer .useful-link li.links1 i {
   line-height: 27px;
   text-align: center;
 }
+
+@media screen and (max-width: 377px) {
+  footer .useful-link li.links1 a .row .col-2 i {
+    margin-right: 20px !important;
+  }
+
+  .links1 {
+    min-width: 300px !important;
+  }
+
+ 
+  }
+  
 
 @media screen and (max-width: 480px) {
 .xs-pl-0 {
