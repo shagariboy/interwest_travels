@@ -469,7 +469,7 @@
                    <label>Let us know any other activity you might need</label>
                     <textarea></textarea>
             </fieldset>
-            <button type="submit" class="booking_button">Book Now</button>
+            <button type="submit" class="booking_button" onclick="sendMail()">Book Now</button>
 
         </form>
         <div id="success-wrapper">
@@ -671,6 +671,50 @@
 
 
     <!-- Script -->
+
+    <script>
+        function sendMail(params) {
+            var tempParams = {
+                package_id: document.getElementById("package_id").value,
+                from_name: document.getElementById("name").value,
+                email_id: document.getElementById("mail").value,
+                country_or: document.getElementById("country").value,
+                phone_number: document.getElementById("phone_number").value,
+                gender_s: document.getElementById("male").value,
+                gender_s: document.getElementById("female").value,
+                nationality_id: document.getElementById("nationality").value,
+                tour_id: document.getElementById("tour_day").value,
+                hotel_rating: document.getElementById("5star").value,
+                hotel_rating: document.getElementById("4star").value,
+                room_rating: document.getElementById("king").value,
+                room_rating: document.getElementById("queen").value,
+                no_tour: document.getElementById("numner_of_people_tour").value,
+                message: document.getElementById("msg").value,
+            };
+
+            emailjs.send("service_5rg4jzd", "template_d3n7vmw", tempParams)
+                .then((response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                },
+                    (error) => {
+                        console.log('FAILED...', error);
+                    },);
+        }
+    </script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init(
+            {
+                publicKey: "teNl4WUP9Sj8LxBNR",
+            });
+    })();
+</script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
     <script type="text/javascript" src="../js/bookingform.js"></script>
     <script>
