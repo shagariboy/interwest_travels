@@ -49,7 +49,7 @@
                 message: document.getElementById("msg").value,
             };
 
-            emailjs.send("service_5rg4jzd", "template_d3n7vmw", tempParams)
+            emailjs.sendForm("service_5rg4jzd", "template_d3n7vmw", tempParams)
                 .then((response) => {
                     console.log('SUCCESS!', response.status, response.text);
                 })
@@ -59,3 +59,11 @@
         }
    
 
+        // Add event listener to the form submission
+document.getElementById('bookingform_cntr').addEventListener('submit', function(event) {
+    // Prevent default form submission behavior
+    event.preventDefault();
+    
+    // Call the sendMail function to handle the submission
+    sendMail();
+});

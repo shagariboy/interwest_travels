@@ -98,12 +98,16 @@
             flex-wrap: wrap;
         }
     </style>
-    <script type="text/javascript" src="../js/emailjs.js"> </script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
+
+    <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
     <script type="text/javascript">
         (function(){
-            emailjs.init("teNl4WUP9Sj8LxBNR");
+            emailjs.init( {
+                publicKey:"teNl4WUP9Sj8LxBNR"
+            });
         })();
     </script>
 
@@ -170,7 +174,7 @@
     </section>
 
     <section class="tm-white-bg reveal" id="booking-section">
-        <form action="./zan_form.php"  method="post" class="booking_form" id="bookingform_cntr">
+        <form method="post" class="booking_form" id="bookingform_cntr">
             <h1> Booking Form </h1>
 
             <fieldset>
@@ -494,7 +498,7 @@
                 <label>Let us know any other activity you might need</label>
                 <textarea id="msg"></textarea>
             </fieldset>
-            <button type="submit" class="booking_button" >Book Now</button>
+            <button type="submit" class="booking_button" value="send" onclick="sendMail()" >Book Now</button>
 
         </form>
         <div id="success-wrapper">
@@ -697,33 +701,68 @@
 
     <!-- Script -->
     
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('bookingform_cntr').addEventListener('submit', function(event) {
+                event.preventDefault();
+                var form = document.getElementById('bookingform_cntr');
 
+                var package_id = form.elements["package_id"].value;
+            var user_name = form.elements["user_name"].value;
+            var country_of_res = form.elements["country_of_res"].value;
+            var user_email = form.elements["user_email"].value;
+            var phone_number = form.elements["phone_number"].value;
+            var gender_options = form.elements["gender_options"].value;
+            var nationality = form.elements["nationality"].value;
+            var tour_day = form.elements["tour_day"].value;
+            var hotel_rating = form.elements["hotel_rating"].value;
+            var room_rating = form.elements["room_rating"].value;
+            var numner_of_people_tour = form.elements["numner_of_people_tour"].value;
+            var msg = form.elements["msg"].value;
+
+            // Prepare parameters for email template
+            var templateParams = {
+                "from_name": user_name,
+                "package_id": package_id,
+                "country_or": country_of_res,
+                "email_id": user_email,
+                "phone_number": phone_number,
+                "gender_s": gender_options,
+                "nationality_id": nationality,
+                "tour_id": tour_day,
+                "hotel_rating": hotel_rating,
+                "room_rating": room_rating,
+                "no_tour": numner_of_people_tour,
+                "message": msg
+            };
+
+                // these IDs from the previous steps
+                emailjs.sendForm("service_5rg4jzd", "template_d3n7vmw", form, templateParams)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+
+<script>
+    // JavaScript to toggle display of contact form and success message
+    document.getElementById('bookingform_cntr').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent default form submission
+        var bookingForm = document.getElementById('bookingform_cntr');
+        var successWrapper = document.getElementById('success-wrapper');
+
+        // Toggle display
+        bookingForm.style.display = 'none';
+        successWrapper.style.display = 'block';
+    });
+</script>
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
 
-<script>
-            // Add event listener to the form submission
-document.getElementById('bookingform_cntr').addEventListener('submit', function(event) {
-    // Prevent default form submission behavior
-    event.preventDefault();
-    
-    // Call the sendMail function to handle the submission
-    sendMail();
-});
-</script>
-    <script>
-        // JavaScript to toggle display of contact form and success message
-        document.getElementById('bookingform_cntr').addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent default form submission
-            var bookingForm = document.getElementById('bookingform_cntr');
-            var successWrapper = document.getElementById('success-wrapper');
-
-            // Toggle display
-            bookingForm.style.display = 'none';
-            successWrapper.style.display = 'block';
-        });
-    </script>
     <script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script> <!-- jQuery -->
     <script type="text/javascript" src="../js/scrollToTop.js"></script> <!-- Scroll To Top -->
     <script type="text/javascript" src="../js/bootstrap.min.js"></script> <!-- bootstrap js -->
