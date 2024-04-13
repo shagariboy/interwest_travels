@@ -331,3 +331,12 @@ footer .bottom-footer p {
     margin-top: 1.5rem!important;
 }
  }
+
+
+
+ 
+@media screen and (max-width: 756px) {
+  #logo-footer {
+    margin-top: -55px!important;
+}
+ }

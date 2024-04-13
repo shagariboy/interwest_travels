@@ -130,7 +130,8 @@
 
 								<!--Contact Form-->
 								<div class="contact-form">
-									<form action="https://formsubmit.co/nnamdiezeh0@gmail.com" method="POST"  id="contact-form">
+									<form  method="POST"  id="contact-form">
+										<input type="hidden" name="access_key" value="4e1d53d8-88b8-44ee-a8d2-ff0a1d0fb18e">
 										<div class="row clearfix">
 											
 											<div class="form-group col-md-6 col-sm-6 co-xs-12">
@@ -163,7 +164,6 @@
 													<option>E-ticket/Confirmation email</option>
 													<option>Booking Invoice</option>
 													<option>Payment Related</option>
-													<option>GST Details Updation</option>
 												</select>
 											</div>
 
@@ -410,10 +410,7 @@
 										<li>
 											<a href="./privacypolicy.html">Privacy Policy</a>
 										</li>
-										<li>
-											<a href="./tc.html">Terms &amp;
-												Conditions</a>
-										</li>
+										
 										<!-- <li>
 											<a target="_blank" href="https://www.walztravels.com/Medic-Trip">Medic Trip</a>
 										</li> -->
@@ -502,18 +499,69 @@
 
 	<!-- Scripts -->
 	<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-	<script>
-		// JavaScript to toggle display of contact form and success message
-		document.getElementById('contact-form').addEventListener('submit', function(event) {
-			event.preventDefault(); // Prevent default form submission
-			var contactForm = document.getElementById('contact-form');
-			var successWrapper = document.getElementById('success-wrapper');
 	
-			// Toggle display
-			contactForm.style.display = 'none';
-			successWrapper.style.display = 'block';
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const contactForm = document.getElementById('contact-form');
+			const successWrapper = document.getElementById('success-wrapper');
+	
+			function toggleSections(isSuccessVisible) {
+				if (isSuccessVisible) {
+					contactForm.style.display = "none";
+					successWrapper.style.display = "block";
+				} else {
+					contactForm.style.display = "block";
+					successWrapper.style.display = "none";
+				}
+			}
+	
+			contactForm.addEventListener('submit', function(e) {
+				e.preventDefault();
+				const formData = new FormData(contactForm);
+				const object = Object.fromEntries(formData);
+				const json = JSON.stringify(object);
+	
+				successWrapper.innerHTML = "Please wait...";
+	
+				fetch('https://api.web3forms.com/submit', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+						'Accept': 'application/json'
+					},
+					body: json
+				})
+				.then(async(response) => {
+					let json = await response.json();
+					if (response.status == 200) {
+						// If the request is successful, display the success message
+						toggleSections(true);
+						successWrapper.innerHTML = `
+							<h2 class="success-header">Thanks for contacting Iterwest travels!</h2>
+							<p class="success-msg">We will get back to you within 24 hours.</p>
+						`;
+					} else {
+						console.log(response);
+						successWrapper.innerHTML = json.message;
+					}
+				})
+				.catch(error => {
+					console.log(error);
+					successWrapper.innerHTML = "Something went wrong!";
+				})
+				.then(function() {
+					contactForm.reset();
+					setTimeout(() => {
+						toggleSections(false);
+					}, 30000);
+				});
+			});
 		});
 	</script>
+	
+	
+	
+	
 
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script> <!-- jQuery -->
 	<script type="text/javascript" src="js/scrollToTop.js"></script> <!-- Scroll To Top -->
@@ -590,20 +638,7 @@
 		}
 	</script>
 
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			const successSection = document.getElementById("success-wrapper");
-
-			function toggleSections(isSuccessVisible) {
-				if (isSuccessVisible) {
-					successSection.style.display = "block";
-				}
-				else {
-					successSection.style.display = "none";
-				}
-			}
-		});
-	</script>
+	
 
 
 	<script type="text/javascript" src="./js/onscrollReveal.js"></script>

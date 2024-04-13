@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,12 +42,12 @@
 
 	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-<link rel="manifest" href="./favicon/site.webmanifest">
-<link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+	<link rel="manifest" href="./favicon/site.webmanifest">
+	<link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -70,7 +68,8 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-4 col-sm-3 tm-site-name-container">
 					<a href="index.html" class="tm-site-name">
-						<img src="img/iterwest_travels_logo.png" width="250" height="auto" id="logo" alt="logo">
+						<img loading="lazy" src="img/iterwest_travels_logo.png" width="250" height="auto" id="logo"
+							alt="logo">
 					</a>
 				</div>
 				<div class="col-lg-9 col-md-8 col-sm-9">
@@ -108,28 +107,25 @@
 						<h1 class="tm-banner-title">Discover Our Destinations</h1>
 						<p class="tm-banner-subtitle">Explore stunning destinations worldwide</p>
 					</div>
-					<img  src="img/banner1.jpg" alt="Discover Our Destinations banner" />
+					<img loading="lazy" src="img/banner1.jpg" alt="Discover Our Destinations banner" />
 				</li>
 				<li>
 					<div class="tm-banner-inner">
 						<h1 class="tm-banner-title">Discover unbeatable offers!</h1>
 						<p class="tm-banner-subtitle">Explore extraordinary destinations at incredible prices</p>
 					</div>
-					<img  src="img/banner2.jpg" alt="Discover unbeatable offers banner" />
+					<img loading="lazy" src="img/banner2.jpg" alt="Discover unbeatable offers banner" />
 				</li>
 				<li>
 					<div class="tm-banner-inner">
 						<h1 class="tm-banner-title">Embark on Your Next Adventure!</h1>
 						<p class="tm-banner-subtitle">Begin Your Vacation with Iterwest Travels </p>
 					</div>
-					<img  src="img/banner3.jpg" alt="Discover unbeatable offers banner" />
+					<img loading="lazy" src="img/banner3.jpg" alt="Discover unbeatable offers banner" />
 				</li>
 			</ul>
 		</div>
 	</section>
-
-
-
 	<!-- landing form -->
 	<section class="tm-white-bg section-padding-bottom">
 		<div class="container tm-home-section-1 " id="more">
@@ -160,8 +156,8 @@
 				<div class="search-box">
 					<div class="tab-content">
 						<div class="tab-pane active" id="flights" role="tabpanel">
-							<form class="" id="flights-form" action="https://formsubmit.co/575d69f02e5db065e290ea3a1ba5774f" method="POST">
-
+							<form class="" id="flights-form" method="POST">
+								<input type="hidden" name="access_key" value="4e1d53d8-88b8-44ee-a8d2-ff0a1d0fb18e">
 								<div class="form">
 
 									<div class="trip-type-container">
@@ -198,8 +194,8 @@
 									</div>
 
 									<div class="form-item form-item2">
-										<input id="phonenumber" type="tel" name="phone-number" placeholder="Phone number"
-											required />
+										<input id="phonenumber" type="tel" name="phone-number"
+											placeholder="Phone number" required />
 									</div>
 
 									<div class="form-item form-item1">
@@ -213,7 +209,9 @@
 									</div>
 
 									<div class="form-item form-item3">
-										<input id="travel-date" type="date" name="travel-date" required />
+										<input id="travel-date" type="text" onfocus="(this.type='date')"
+											onblur="(this.type='text')" name="travel-date" placeholder="Travel Date"
+											required />
 									</div>
 
 									<div class="form-item form-item4">
@@ -223,26 +221,23 @@
 											<option value="First">First</option>
 										</select>
 									</div>
-
 									<div class="textarea-div form-item4">
 										<textarea id="message" type="text" name="message" placeholder="Message"
 											required></textarea>
 									</div>
 									<div class="btn-container">
-										<input id="submit" class="btn btn-glow form-btn" type="submit" name="Flight form Inquiry"
-											value="Inquire Now" />
+										<input id="submit" class="btn btn-glow form-btn" type="submit"
+											name="Flight form Inquiry" value="Inquire Now" />
 									</div>
-
 									<div id="flights-wrapper">
 										Message Received. Please check your email within 24 hours!
-
 									</div>
 								</div>
 							</form>
 						</div>
 						<div class="tab-pane  " id="tour" role="tabpanel">
-							<form class="" id="tour-form"  action="https://formsubmit.co/575d69f02e5db065e290ea3a1ba5774f"  method="POST">
-
+							<form class="" id="tour-form" method="POST">
+								<input type="hidden" name="access_key" value="4e1d53d8-88b8-44ee-a8d2-ff0a1d0fb18e">
 								<div class="form">
 									<div class="form-item form-item1">
 										<input id="firstname" type="text" name="firstname" placeholder="First Name"
@@ -260,8 +255,8 @@
 									</div>
 
 									<div class="form-item form-item2">
-										<input id="phonenumber" type="tel" name="phone-number" placeholder="Phone Number"
-											required />
+										<input id="phonenumber" type="tel" name="phone-number"
+											placeholder="Phone Number" required />
 									</div>
 
 									<div class="form-item form-item2">
@@ -269,7 +264,9 @@
 									</div>
 
 									<div class="form-item form-item3">
-										<input id="travel-date" type="date" name="travel-date" required />
+										<input id="travel-date" type="text" onfocus="(this.type='date')"
+											onblur="(this.type='text')" name="travel-date" placeholder="Travel Date"
+											required />
 									</div>
 
 									<div class="form-item form-item4">
@@ -282,36 +279,20 @@
 											required></textarea>
 									</div>
 									<div class="btn-container">
-										<input id="submit" class="btn btn-glow form-btn" type="submit" name="Tour form Inquiry"
-											value="Inquire Now" required />
+										<input id="submit" class="btn btn-glow form-btn" type="submit"
+											name="Tour form Inquiry" value="Inquire Now" required />
 									</div>
 									<div id="tour-wrapper">
 										Message Received. Please check your email within 24 hours!
-
 									</div>
 								</div>
 							</form>
 						</div>
-
 					</div>
 				</div>
-
-
 			</div>
 		</div>
-
-
-
-		<!-- <div class="row">
-				<div class="col-lg-12">
-					<p class="home-description">Paryatana is the travelling website which will guide you through out
-						your travelling journey </p>
-				</div>
-			</div> -->
-
-
 	</section>
-
 	<!-- why choose us -->
 	<section class="tm-white-bg section-padding-bottom" id="whychooseus">
 		<div class="container reveal">
@@ -361,9 +342,6 @@
 			</div>
 		</div>
 	</section>
-
-
-
 	<!-- We find the best flight deals -->
 	<section class="tm-white-bg section-padding-bottom reveal">
 		<div class="container">
@@ -538,9 +516,6 @@
 
 		</div>
 	</section>
-
-
-
 	<!-- our packages -->
 	<section class="tm-white-bg section-padding-bottom reveal">
 		<div class="container">
@@ -644,11 +619,12 @@
 								captivating city tours and exhilarating desert adventures.
 							</p>
 							<button class="pulse"><a href="./contact.html">
-								<p>Enquire Now</p></a>
+									<p>Enquire Now</p>
+								</a>
 							</button>
 							<button class="pulse"><a href="./packages/qatar_5day.html">
-								<p>View Details</p>
-							</a>
+									<p>View Details</p>
+								</a>
 							</button>
 						</div>
 					</article>
@@ -665,11 +641,12 @@
 							<p class="txt">Experience the essence of Qatar in one unforgettable trip.
 							</p>
 							<button class="pulse"><a href="./contact.html">
-								<p>Enquire Now</p></a>
+									<p>Enquire Now</p>
+								</a>
 							</button>
 							<button class="pulse"><a href="./packages/qatar_4day.html">
-								<p>View Details</p>
-							</a>
+									<p>View Details</p>
+								</a>
 							</button>
 
 						</div>
@@ -688,11 +665,12 @@
 								with city exploration and thrilling desert escapades.
 							</p>
 							<button class="pulse"><a href="./contact.html">
-								<p>Enquire Now</p></a>
+									<p>Enquire Now</p>
+								</a>
 							</button>
 							<button class="pulse"><a href="./packages/qatar_3day.html">
-								<p>View Details</p>
-							</a>
+									<p>View Details</p>
+								</a>
 							</button>
 
 						</div>
@@ -703,8 +681,6 @@
 
 		</div>
 	</section>
-
-
 	<!-- inspire your next adventure -->
 	<section class="tm-white-bg section-padding-bottom">
 		<div class="container reveal">
@@ -722,75 +698,70 @@
 				</div>
 				<div class="figure-container">
 					<figure class="figure reveal">
-						<img src="./img/paris.png" alt="paris">
+						<img loading="lazy" src="./img/paris.png" alt="paris">
 						<figcaption>
 							<h3 class="title">Paris</h3>
 							<h3 class="hover">Book Now</h3>
 						</figcaption>
-						<a href="#"></a>
+						<a href="./contact.html"></a>
 					</figure>
 					<figure class="figure reveal">
-						<img src="./img/barcelona.png" alt="barcelona">
+						<img loading="lazy" src="./img/barcelona.png" alt="barcelona">
 						<figcaption>
 							<h3 class="title">Barcelona</h3>
 							<h3 class="hover">Book Now</h3>
 						</figcaption>
-						<a href="#"></a>
+						<a href="./contact.html"></a>
 					</figure>
 					<figure class="figure reveal">
-						<img src="./img/new york.png" alt="new york">
+						<img loading="lazy" src="./img/new york.png" alt="new york">
 						<figcaption>
 							<h3 class="title">New York</h3>
 							<h3 class="hover">Book Now</h3>
 						</figcaption>
-						<a href="#"></a>
+						<a href="./contact.html"></a>
 					</figure>
 					<figure class="figure reveal">
-						<img src="./img/rome.png" alt="rome">
+						<img loading="lazy" src="./img/rome.png" alt="rome">
 						<figcaption>
 							<h3 class="title">Rome</h3>
 							<h3 class="hover">Book Now</h3>
 						</figcaption>
-						<a href="#"></a>
+						<a href="./contact.html"></a>
 					</figure>
 					<figure class="figure reveal">
-						<img src="./img/tokyo.png" alt="tokyo">
+						<img loading="lazy" src="./img/tokyo.png" alt="tokyo">
 						<figcaption>
 							<h3 class="title">Tokyo</h3>
 							<h3 class="hover">Book Now</h3>
 						</figcaption>
-						<a href="#"></a>
+						<a href="./contact.html"></a>
 					</figure>
 					<figure class="figure reveal">
-						<img src="./img/london.png" alt="london">
+						<img loading="lazy" src="./img/london.png" alt="london">
 						<figcaption>
 							<h3 class="title">London</h3>
 							<h3 class="hover">Book Now</h3>
 						</figcaption>
-						<a href="#"></a>
+						<a href="./contact.html"></a>
 					</figure>
 				</div>
 			</div>
 		</div>
 	</section>
-
-
-
-
-
 	<!-- landing form -->
 	<section class="tm-white-bg section-padding-bottom" style="padding-top: 30px;">
 		<div class="container tm-home-section-1 glow-load1 reveal">
 			<div class="row ">
 				<!-- Nav tabs -->
 
-				<form action="https://formsubmit.co/575d69f02e5db065e290ea3a1ba5774f" method="POST" class="newsletter " id="newsletter1-form">
+				<form method="POST" class="newsletter " id="newsletter1-form">
+					<input type="hidden" name="access_key" value="4e1d53d8-88b8-44ee-a8d2-ff0a1d0fb18e">
 					<div class="col-md-12">
 						<label class="newsletter-header">Never miss an offer</label>
 						<label class="newsletter-subheader">Subscribe and be the first to receive our exclusive
 							offers.</label>
 						<div class="form" id="newsletter-form">
-							<input type="hidden" name="access_key" value="3c50f320-8587-4db8-845d-e0ae729fecfa">
 							<div class="form-item1 form-itemA">
 								<input id="newsletter_email" type="text" name="first-name" placeholder="First Name"
 									required />
@@ -804,14 +775,15 @@
 									required />
 							</div>
 							<div class="btn-container" id="newsletter-btn">
-								<input id="submit" class="btn btn-glow form-btn" type="submit" name="Newsletter Subscription"
-									value="Subscribe" />
+								<input id="submit" class="btn btn-glow form-btn" type="submit"
+									name="Newsletter Subscription" value="Subscribe" />
 							</div>
 						</div>
 						<div id="newslettersuccess-wrapper">
 							Thank you for subscribing to our newsletter!
 
 						</div>
+
 					</div>
 				</form>
 
@@ -819,15 +791,6 @@
 
 			</div>
 		</div>
-
-
-
-		<!-- <div class="row">
-					<div class="col-lg-12">
-						<p class="home-description">Paryatana is the travelling website which will guide you through out
-							your travelling journey </p>
-					</div>
-				</div> -->
 
 
 	</section>
@@ -841,7 +804,7 @@
 				<div class="col-lg-4">
 					<a href="#">
 						<div class="img-container">
-							<img src="./img/iTerwest Travels Logo 2.png" alt="logo">
+							<img loading="lazy" src="./img/iTerwest Travels Logo 2.png" alt="logo" id="logo-footer">
 						</div>
 					</a>
 					<ul class="social-links">
@@ -922,10 +885,7 @@
 										<li>
 											<a href="./privacypolicy.html">Privacy Policy</a>
 										</li>
-										<li>
-											<a href="./tc.html">Terms &amp;
-												Conditions</a>
-										</li>
+
 										<!-- <li>
 											<a target="_blank" href="https://www.walztravels.com/Medic-Trip">Medic Trip</a>
 										</li> -->
@@ -1000,75 +960,175 @@
 
 
 	<!-- footer -->
-	<script src="https://kit.fontawesome.com/e9cf5a296c.js" crossorigin="anonymous"></script>
+	
+	<script src="https://kit.fontawesome.com/e9cf5a296c.js" crossorigin="anonymous" defer></script>
 	<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-	<script>
-		// JavaScript to toggle display of contact form and success message
-		document.getElementById('newsletter1-form').addEventListener('submit', function (event) {
-			event.preventDefault(); // Prevent default form submission
-			var newsletterForm = document.getElementById('newsletter1-form');
-			var newslettersuccessWrapper = document.getElementById('newslettersuccess-wrapper');
 
-			// Toggle display
-			newslettersuccessWrapper.style.display = 'block';
+	<script>
+		const form = document.getElementById('newsletter1-form');
+		const newslettersuccessWrapper = document.getElementById('newslettersuccess-wrapper');
+
+		form.addEventListener('submit', function (e) {
+			e.preventDefault();
+			const formData = new FormData(form);
+			const object = Object.fromEntries(formData);
+			const json = JSON.stringify(object);
+
+			newslettersuccessWrapper.innerHTML = "Please wait...";
+
+			fetch('https://api.web3forms.com/submit', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+					'Accept': 'application/json'
+				},
+				body: json
+			})
+				.then(async (response) => {
+					let json = await response.json();
+					if (response.status == 200) {
+						// If the request is successful, display the success message
+						newslettersuccessWrapper.innerHTML = "Thank you for subscribing to our newsletter!";
+						newslettersuccessWrapper.style.display = 'block';
+					} else {
+						console.log(response);
+						newslettersuccessWrapper.innerHTML = json.message;
+					}
+				})
+				.catch(error => {
+					console.log(error);
+					newslettersuccessWrapper.innerHTML = "Something went wrong!";
+				})
+				.then(function () {
+					form.reset();
+					setTimeout(() => {
+						newslettersuccessWrapper.style.display = "none";
+					}, 3000);
+				});
 		});
 	</script>
 
 	<script>
-		// JavaScript to toggle display of contact form and success message
-		document.getElementById('flights-form').addEventListener('submit', function (event) {
-			event.preventDefault(); // Prevent default form submission
-			var flightsForm = document.getElementById('flights-form');
-			var flightsWrapper = document.getElementById('flights-wrapper');
+		const flightsForm = document.getElementById('flights-form');
+		const flightssuccessWrapper = document.getElementById('flights-wrapper');
 
-			// Toggle display
-			flightsWrapper.style.display = 'block';
+		flightsForm.addEventListener('submit', function (e) {
+			e.preventDefault();
+			const flightsformData = new FormData(flightsForm);
+			const object = Object.fromEntries(flightsformData);
+			const json = JSON.stringify(object);
+
+			flightssuccessWrapper.innerHTML = "Please wait...";
+
+			fetch('https://api.web3forms.com/submit', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+					'Accept': 'application/json'
+				},
+				body: json
+			})
+				.then(async (response) => {
+					let json = await response.json();
+					if (response.status == 200) {
+						// If the request is successful, display the success message
+						flightssuccessWrapper.innerHTML = "Message Received. Please check your email within 24 hours!";
+						flightssuccessWrapper.style.display = 'block';
+					} else {
+						console.log(response);
+						flightssuccessWrapper.innerHTML = json.message;
+					}
+				})
+				.catch(error => {
+					console.log(error);
+					flightssuccessWrapper.innerHTML = "Something went wrong!";
+				})
+				.then(function () {
+					flightsForm.reset();
+					setTimeout(() => {
+						flightssuccessWrapper.style.display = "none";
+					}, 3000);
+				});
 		});
 	</script>
 
 	<script>
-		// JavaScript to toggle display of contact form and success message
-		document.getElementById('tour-form').addEventListener('submit', function (event) {
-			event.preventDefault(); // Prevent default form submission
-			var tourForm = document.getElementById('tour-form');
-			var tourWrapper = document.getElementById('tour-wrapper');
+		const tourForm = document.getElementById('tour-form');
+		const toursuccessWrapper = document.getElementById('tour-wrapper');
 
-			// Toggle display
-			tourWrapper.style.display = 'block';
+		tourForm.addEventListener('submit', function (e) {
+			e.preventDefault();
+			const tourformData = new FormData(tourForm);
+			const object = Object.fromEntries(tourformData);
+			const json = JSON.stringify(object);
+
+			toursuccessWrapper.innerHTML = "Please wait...";
+
+			fetch('https://api.web3forms.com/submit', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+					'Accept': 'application/json'
+				},
+				body: json
+			})
+				.then(async (response) => {
+					let json = await response.json();
+					if (response.status == 200) {
+						// If the request is successful, display the success message
+						toursuccessWrapper.innerHTML = "Message Received. Please check your email within 24 hours!";
+						toursuccessWrapper.style.display = 'block';
+					} else {
+						console.log(response);
+						toursuccessWrapper.innerHTML = json.message;
+					}
+				})
+				.catch(error => {
+					console.log(error);
+					toursuccessWrapper.innerHTML = "Something went wrong!";
+				})
+				.then(function () {
+					tourForm.reset();
+					setTimeout(() => {
+						toursuccessWrapper.style.display = "none";
+					}, 3000);
+				});
 		});
 	</script>
-	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script> <!-- jQuery -->
-	<script type="text/javascript" src="js/scrollToTop.js"></script> <!-- Scroll To Top -->
 
-	<script type="text/javascript" src="js/bootstrap.min.js"></script> <!-- bootstrap js -->
-	<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="js/scrollToTop.js" defer></script> <!-- Scroll To Top -->
+	<script type="text/javascript" src="js/moment.js" defer></script>
+	<script type="text/javascript" src="js/bootstrap.min.js" defer></script> <!-- bootstrap js -->
 
-	<script type="text/javascript" src="js/templatemo-script.js"></script> <!-- Templatemo Script -->
-	<script type="text/javascript" src="js/update-copyrightYear.js"></script> <!--Updating the copyright year-->
+	<script type="text/javascript" src="js/jquery.flexslider-min.js" defer></script>
+
+	<script type="text/javascript" src="js/templatemo-script.js" defer></script> <!-- Templatemo Script -->
+	<script type="text/javascript" src="js/update-copyrightYear.js" defer></script> <!--Updating the copyright year-->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script>
 		// HTML document is loaded. DOM is ready.
 		$(function () {
-
 			$('#hotelCarTabs a').click(function (e) {
-				e.preventDefault()
-				$(this).tab('show')
-			})
+				e.preventDefault();
+				$(this).tab('show');
+			});
 
 			$('.date').datetimepicker({
 				format: 'MM/DD/YYYY'
 			});
 			$('.date-time').datetimepicker();
 
-			// https://css-tricks.com/snippets/jquery/smooth-scrolling/
-			$('a[href*=#]:not([href=#])').click(function () {
-				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location
-					.hostname == this.hostname) {
+			// Smooth scrolling
+			$('a[href*="\\#"]:not([href="\\#"])').click(function () {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 					var target = $(this.hash);
 					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 					if (target.length) {
-						$('html,body').animate({
+						$('html, body').animate({
 							scrollTop: target.offset().top
 						}, 1000);
 						return false;
@@ -1078,16 +1138,14 @@
 		});
 
 		// Load Flexslider when everything is loaded.
-		$(window).load(function () {
-
-			//	For images only
+		$(window).on('load', function () {
+			// For images only
 			$('.flexslider').flexslider({
 				controlNav: false
 			});
-
-
 		});
 	</script>
+
 	<!-- Preloader Script -->
 	<script type="text/javascript">
 		document.addEventListener('load', preLoader())
@@ -1123,7 +1181,7 @@
 			});
 		});
 	</script>
-	<script type="text/javascript" src="./js/onscrollReveal.js"></script>
+	<script type="text/javascript" src="./js/onscrollReveal.js" defer></script>
 </body>
 
 </html>

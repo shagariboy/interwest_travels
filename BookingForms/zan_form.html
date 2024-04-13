@@ -99,17 +99,7 @@
         }
     </style>
 
-    <script
-  type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init( {
-                publicKey:"teNl4WUP9Sj8LxBNR"
-            });
-        })();
-    </script>
+
 
 
 </head>
@@ -174,30 +164,23 @@
     </section>
 
     <section class="tm-white-bg reveal" id="booking-section">
-        <form method="post" class="booking_form" id="bookingform_cntr">
+        <form method="POST" class="booking_form" id="bookingform_cntr">
             <h1> Booking Form </h1>
-
+            <input type="hidden" name="access_key" value="4e1d53d8-88b8-44ee-a8d2-ff0a1d0fb18e">
             <fieldset>
                 <label for="job">Package</label>
-                <select id="package_id" name="country_of_res">
+                <select id="package_id" name="Package selected" required>
                     <option value="">Select Package</option>
-                    <option value="af">Zanibar</option>
-                    <option value="al">South Africa</option>
-                    <option value="dz">Namibia</option>
-                    <option value="as">Tanzania</option>
-                    <option value="ad">Kenya</option>
-                    <option value="ao">Qatar (1 Day)</option>
-                    <option value="ai">Qatar (3 Day)</option>
-                    <option value="aq">Qatar (4 Day)</option>
-                    <option value="ag">Qatar (5 Day)</option>
+                    <option value="Zanibar">Zanibar</option>
+                    
 
                 </select>
 
                 <label for="name">Full name as it appears on passport</label>
-                <input type="text" id="name" name="user_name">
+                <input type="text" id="name" name="Full name">
 
                 <label for="job">Country</label>
-                <select id="country" name="country_of_res">
+                <select id="country" name="country of residence">
                     <option value="">Country of Residence</option>
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Albania">Albania</option>
@@ -447,58 +430,58 @@
                 </select>
 
                 <label for="email">Email Address</label>
-                <input type="email" id="mail" name="user_email">
+                <input type="email" id="mail" name="email">
 
                 <label for="phonenumber">Phone number</label>
-                <input type="number" id="phone_number" name="phone_number">
+                <input type="number" id="phone_number" name="phone number">
 
                 <label>Gender</label>
-                <div class="gender-options" id="gender">
+                <div class="gender-options" id="gender" name="gender">
                     <label for="under_13" class="light">Male <input type="radio" id="male" value="Male"
-                            name="gender_options"></label>
+                            name="male"></label>
                     <label for="over_13" class="light">Female <input type="radio" id="female" value="Female"
-                            name="gender_options"></label>
+                            name="female"></label>
                 </div>
 
                 <label for="nationality">Nationality </label>
                 <input type="text" id="nationality" name="nationality">
 
                 <label for="tour-duration">Tour durations (days)</label>
-                <input type="number" id="tour_day" name="tour_day">
+                <input type="number" id="tour_day" name="tour duration">
 
                 <label class="hotel-heading">HOTEL PREFERENCE</label>
                 <label for="hotel-rating">Hotel Rating Preference </label>
-                <div class="gender-options" id="hotel-options">
+                <div class="gender-options" id="hotel-options" name="hotel option">
                     <div style="display: inline-flex;">
                         <p style="width: 50px;">5 Star </p> <input type="radio" id="5star" value="5 Star"
-                            name="hotel_rating" />
+                            name="5 STAR" />
                     </div>
                     <div style="display: inline-flex;">
                         <p style="width: 50px;">4 Star </p> <input type="radio" id="4star" value="4 Star"
-                            name="hotel_rating" />
+                            name="4 STAR" />
                     </div>
                 </div>
 
                 <label for="room-rating">Room Rating Preference </label>
-                <div class="gender-options" id="room-options">
+                <div class="gender-options" id="room-options" name="Room rating preference">
                     <div style="display: inline-flex;">
                         <p style="width: 50px;">King </p> <input type="radio" id="king" value="King"
-                            name="room_rating" />
+                            name="King" />
                     </div>
                     <div style="display: inline-flex;">
                         <p style="width: 50px;">2 Double/Queen </p> <input type="radio" id="Queen"
-                            value="2 Double/Queen" name="room_rating" />
+                            value="2 Double/Queen" name="2 Double/Queen" />
                     </div>
                 </div>
 
-                <label for="number-of-people">Number of people coming to the tour (Spacial discount if the number is
+                <label for="number-of-people">Number of people coming to the tour (Special discount if the number is
                     more than
                     10)</label>
-                <input type="number" id="numner_of_people_tour" name="tour_day">
+                <input type="number" id="numner_of_people_tour" name="number of people tour">
                 <label>Let us know any other activity you might need</label>
-                <textarea id="msg"></textarea>
+                <textarea id="msg" name="message"></textarea>
             </fieldset>
-            <button type="submit" class="booking_button" value="send" onclick="sendMail()" >Book Now</button>
+            <button type="submit" class="booking_button" value="send" name="Booking Form" >Book Now</button>
 
         </form>
         <div id="success-wrapper">
@@ -609,10 +592,7 @@
                                         <li>
                                             <a href="../privacypolicy.html">Privacy Policy</a>
                                         </li>
-                                        <li>
-                                            <a href="../tc.html">Terms &amp;
-                                                Conditions</a>
-                                        </li>
+                                       
                                         <!-- <li>
 											<a target="_blank" href="https://www.walztravels.com/Medic-Trip">Medic Trip</a>
 										</li> -->
@@ -701,64 +681,67 @@
 
     <!-- Script -->
     
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('bookingform_cntr').addEventListener('submit', function(event) {
-                event.preventDefault();
-                var form = document.getElementById('bookingform_cntr');
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+		const bookingForm = document.getElementById('bookingform_cntr');
+		const bookingsuccessWrapper = document.getElementById('success-wrapper');
+	
+        function toggleSections(isSuccessVisible) {
+				if (isSuccessVisible) {
+					bookingForm.style.display = "none";
+					bookingsuccessWrapper.style.display = "block";
+				} else {
+					bookingForm.style.display = "block";
+					bookingsuccessWrapper.style.display = "none";
+				}
+			}
 
-                var package_id = form.elements["package_id"].value;
-            var user_name = form.elements["user_name"].value;
-            var country_of_res = form.elements["country_of_res"].value;
-            var user_email = form.elements["user_email"].value;
-            var phone_number = form.elements["phone_number"].value;
-            var gender_options = form.elements["gender_options"].value;
-            var nationality = form.elements["nationality"].value;
-            var tour_day = form.elements["tour_day"].value;
-            var hotel_rating = form.elements["hotel_rating"].value;
-            var room_rating = form.elements["room_rating"].value;
-            var numner_of_people_tour = form.elements["numner_of_people_tour"].value;
-            var msg = form.elements["msg"].value;
-
-            // Prepare parameters for email template
-            var templateParams = {
-                "from_name": user_name,
-                "package_id": package_id,
-                "country_or": country_of_res,
-                "email_id": user_email,
-                "phone_number": phone_number,
-                "gender_s": gender_options,
-                "nationality_id": nationality,
-                "tour_id": tour_day,
-                "hotel_rating": hotel_rating,
-                "room_rating": room_rating,
-                "no_tour": numner_of_people_tour,
-                "message": msg
-            };
-
-                // these IDs from the previous steps
-                emailjs.sendForm("service_5rg4jzd", "template_d3n7vmw", form, templateParams)
-                    .then(() => {
-                        console.log('SUCCESS!');
-                    }, (error) => {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
-
-<script>
-    // JavaScript to toggle display of contact form and success message
-    document.getElementById('bookingform_cntr').addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent default form submission
-        var bookingForm = document.getElementById('bookingform_cntr');
-        var successWrapper = document.getElementById('success-wrapper');
-
-        // Toggle display
-        bookingForm.style.display = 'none';
-        successWrapper.style.display = 'block';
+		bookingForm.addEventListener('submit', function(e) {
+			e.preventDefault();
+			const bookingformData = new FormData(bookingForm);
+			const object = Object.fromEntries(bookingformData);
+			const json = JSON.stringify(object);
+	
+			bookingsuccessWrapper.innerHTML = "Please wait...";
+	
+			fetch('https://api.web3forms.com/submit', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+						'Accept': 'application/json'
+					},
+					body: json
+				})
+				.then(async(response) => {
+					let json = await response.json();
+					if (response.status == 200) {
+						// If the request is successful, display the success message
+                        toggleSections(true);
+						bookingsuccessWrapper.innerHTML = `
+							<h2 class="success-header">Booking request received!</h2>
+							<p class="success-msg">We will get back to you within 24 hours.</p>
+						`;
+					} else {
+						console.log(response);
+						bookingsuccessWrapper.innerHTML = json.message;
+					}
+				})
+				.catch(error => {
+					console.log(error);
+					bookingsuccessWrapper.innerHTML = "Something went wrong!";
+				})
+				.then(function() {
+					bookingForm.reset();
+					setTimeout(() => {
+						toggleSections(false);
+					}, 30000);
+				});
+		});
     });
-</script>
+	</script>
+    
+
+
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
