@@ -11,35 +11,52 @@
 	<title>Iterwest - Contact Us</title>
 
 
-	<link href="css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
-	<link href="css/flexslider.css" rel="stylesheet">
-	<link href="css/templatemo-style.css" rel="stylesheet">
-	<link href="css/scrollToTop.css" rel="stylesheet">
-	<link href="css/hero.css" rel="stylesheet">
+	<style>
+		@font-face {
+			font-family: "Jotia W00 Regular";
+			src: url("https://db.onlinewebfonts.com/t/09fc87e1ac5bbdeb5c42b2c1ec4f780f.eot");
+			src: url("https://db.onlinewebfonts.com/t/09fc87e1ac5bbdeb5c42b2c1ec4f780f.eot?#iefix")format("embedded-opentype"),
+				url("https://db.onlinewebfonts.com/t/09fc87e1ac5bbdeb5c42b2c1ec4f780f.woff")format("woff"),
+				url("https://db.onlinewebfonts.com/t/09fc87e1ac5bbdeb5c42b2c1ec4f780f.woff2")format("woff2"),
+				url("https://db.onlinewebfonts.com/t/09fc87e1ac5bbdeb5c42b2c1ec4f780f.ttf")format("truetype"),
+				url("https://db.onlinewebfonts.com/t/09fc87e1ac5bbdeb5c42b2c1ec4f780f.svg#Jotia W00 Regular")format("svg");
+			font-weight: normal;
+			font-style: normal;
+			font-display: swap;
+		}
 
-	<!--Link to footer.css-->
-	<link href="css/footer.css" rel="stylesheet">
-	<!-- <link href="css/Homenavbar.css" rel="stylesheet"> -->
 
-	<!--  Fontawesome icons -->
-	<script src="https://kit.fontawesome.com/e9cf5a296c.js" crossorigin="anonymous"></script>
-
-
-	<!-- Fonts -->
+		body {
+			font-family: "Jotia W00 Regular", serif;
+			/* Fallback font */
+		}
+	</style>
 	<link href="https://db.onlinewebfonts.com/c/09fc87e1ac5bbdeb5c42b2c1ec4f780f?family=Jotia+W00+Regular"
 		rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css"
+		integrity="sha512-DD6Lm09YDHzhW3K4eLJ9Y7sFrBwtCF+KuSWOLYFqKsZ6RX4ifCu9vWqM4R+Uy++aBWe6wD4csgQRzGKp5vP6tg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" async />
+	<link href="css/bootstrap.min.css" rel="stylesheet" defer>
+	<link href="css/flexslider.css" rel="stylesheet" async>
+	<link href="css/templatemo-style.css" rel="stylesheet" async>
+	<link href="css/scrollToTop.css" rel="stylesheet">
+	<link href="css/hero.css" rel="stylesheet" disabled async>
+	<!--Link to footer.css-->
+	<link href="css/footer.css" rel="stylesheet" defer>
+
+	<link href="css/logo.css" rel="stylesheet" async>
+
 
 
 	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-<link rel="manifest" href="./favicon/site.webmanifest">
-<link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+	<link rel="manifest" href="./favicon/site.webmanifest">
+	<link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -60,7 +77,7 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-4 col-sm-3 tm-site-name-container">
 					<a href="index.html" class="tm-site-name">
-						<img src="img/iterwest_travels_logo.png" width="250" height= "auto" id="logo">
+						<img src="img/iterwest_travels_logo.png" width="250" height="auto" id="logo">
 					</a>
 				</div>
 				<div class="col-lg-9 col-md-8 col-sm-9">
@@ -76,7 +93,7 @@
 					</div>
 					<nav class="tm-nav">
 						<ul>
-							<li><a class="upper_links"  href="index.html" >Home</a></li>
+							<li><a class="upper_links" href="index.html">Home</a></li>
 							<li><a class="upper_links" href="about.html">About Us</a></li>
 							<li><a class="upper_links" href="services.html">Our Services</a></li>
 							<li><a class="upper_links" href="packages.html">Packages</a></li>
@@ -130,10 +147,11 @@
 
 								<!--Contact Form-->
 								<div class="contact-form">
-									<form  method="POST"  id="contact-form">
-										<input type="hidden" name="access_key" value="4e1d53d8-88b8-44ee-a8d2-ff0a1d0fb18e">
+									<form method="POST" id="contact-form">
+										<input type="hidden" name="access_key"
+											value="4e1d53d8-88b8-44ee-a8d2-ff0a1d0fb18e">
 										<div class="row clearfix">
-											
+
 											<div class="form-group col-md-6 col-sm-6 co-xs-12">
 												<input type="text" name="name" value="" placeholder="Name" required>
 											</div>
@@ -146,14 +164,13 @@
 											<div class="form-group col-md-6 col-sm-6 co-xs-12">
 
 												<select name="Nature of feedback">
-													<option >Nature of feedback</option>
-													<option >Complaints</option>
+													<option>Nature of feedback</option>
+													<option>Complaints</option>
 													<option>Appreciation</option>
-													<option >Service request</option>
-													<option >Feedback</option>
+													<option>Service request</option>
+													<option>Feedback</option>
 												</select>
 											</div>
-											
 
 											<div class="form-group col-md-6 col-sm-6 co-xs-12">
 
@@ -181,27 +198,29 @@
 												</select>
 											</div>
 											<div class="form-group col-md-12 col-sm-12 co-xs-12">
-												<textarea name="Booking Reference" placeholder="Booking Reference"></textarea>
+												<textarea name="Booking Reference"
+													placeholder="Booking Reference"></textarea>
 											</div>
 											<div class="form-group col-md-12 col-sm-12 co-xs-12">
 												<textarea name="message" placeholder="Message"></textarea>
 											</div>
 											<div class="form-group col-md-12 col-sm-12 co-xs-12">
-												<button type="submit" class="theme-btn btn-style-one" id="send-btn">Send Now</button>
+												<button type="submit" class="theme-btn btn-style-one" id="send-btn">Send
+													Now</button>
 											</div>
 										</div>
 									</form>
 									<div id="success-wrapper">
-									<div class="success-card">
-										<div class="success-card-content">
-										  <h2 class="success-header">Booking request received!</h2> 
-										  <p class="success-msg">
-											We will get back to you within 24 hours.
-										  </p>
-									  </div>
-										
+										<div class="success-card">
+											<div class="success-card-content">
+												<h2 class="success-header">Booking request received!</h2>
+												<p class="success-msg">
+													We will get back to you within 24 hours.
+												</p>
+											</div>
+
+										</div>
 									</div>
-								</div>
 								</div>
 								<!--End Contact Form-->
 
@@ -214,23 +233,29 @@
 								<h2>Contact Info</h2>
 								<ul class="list-info">
 									<li id="pn"><i class="fas fa-phone"></i>+2348083879728</li>
-									<li id="pn"><i class="far fa-envelope"></i><a href="mailto:info@walztravels.com">info@iterwesttravels.com</a></li>
-									<li id="offn"><i class="fas fa-globe"></i>Head Office: <br/>
-										Graceland Estate, Along Abraham Adesanya, Lagos, Nigeria <br/><br/>
-										Qatar Office: <br/>
-										Rawdat Alkali Al Muntaza Floor 22, Office 211, Doha, Qatar <br/><br/>
-										Germany Office: <br/>
+									<li id="pn"><i class="far fa-envelope"></i><a
+											href="mailto:info@walztravels.com">info@iterwesttravels.com</a></li>
+									<li id="offn"><i class="fas fa-globe"></i>Head Office: <br />
+										Graceland Estate, Along Abraham Adesanya, Lagos, Nigeria <br /><br />
+										Qatar Office: <br />
+										Rawdat Alkali Al Muntaza Floor 22, Office 211, Doha, Qatar <br /><br />
+										Germany Office: <br />
 										Berlin, Germany
 									</li>
 								</ul>
 								<ul class="social-icon-four">
 									<li class="follow">Follow on: </li>
-									<li><a href="https://www.facebook.com/iterwesttravels/"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="https://twitter.com/iterwesttravels"><i class="fa-brands fa-x-twitter"></i></a></li>
-									<li><a href="https://www.youtube.com/@iterwesttravels/xregexp"><i class="fa fa-youtube"></i></a></li>
-									<li><a href="https://www.linkedin.com/company/iterwest-travels/"><i class="fa fa-linkedin"></i></a></li>				
-									<li><a href="https://instagram.com/iterwesttravels"><i class="fa fa-instagram"></i></a></li>
-									
+									<li><a href="https://www.facebook.com/iterwesttravels/"><i
+												class="fa fa-facebook"></i></a></li>
+									<li><a href="https://twitter.com/iterwesttravels"><i
+												class="fa-brands fa-x-twitter"></i></a></li>
+									<li><a href="https://www.youtube.com/@iterwesttravels/xregexp"><i
+												class="fa fa-youtube"></i></a></li>
+									<li><a href="https://www.linkedin.com/company/iterwest-travels/"><i
+												class="fa fa-linkedin"></i></a></li>
+									<li><a href="https://instagram.com/iterwesttravels"><i
+												class="fa fa-instagram"></i></a></li>
+
 								</ul>
 							</div>
 						</div>
@@ -241,88 +266,7 @@
 
 		</div>
 	</section>
-
-	<!--Core Values-->
-	<!--	<section class="tm-white-bg section-padding-bottom reveal">
-
-	</section>
-
--->
-	<!-- white bg -->
-	<!--	<section class="tm-white-bg section-padding-bottom reveal">
-		<div class="container">
-			<div class="row">
-				<div class="tm-section-header section-margin-top" id="special">
-					<div class="col-lg-4 col-md-3 col-sm-3">
-						<hr>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6">
-						<h2 class="tm-section-title">Special Packages</h2>
-					</div>
-					<div class="col-lg-4 col-md-3 col-sm-3">
-						<hr>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 col-xxs-12">
-					<div class="tm-tours-box-2">
-						<img src="img/index-03.jpg" alt="image" class="img-responsive">
-						<div class="tm-tours-box-2-info">
-							<h3 class="margin-bottom-15">Goa beach</h3>
-							<div class="tm-rating"></div>
-							<p class="gray-text"><i class="fa fa-calendar"></i> <span class="happening-date"></span></p>
-						</div>
-						<a href="#" class="tm-tours-box-2-link">Book Now</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 col-xxs-12">
-					<div class="tm-tours-box-2">
-						<img src="img/index-04.jpg" alt="image" class="img-responsive">
-						<div class="tm-tours-box-2-info">
-							<h3 class="margin-bottom-15">Rajasthan desert </h3>
-							<div class="tm-rating"></div>
-							<p class="gray-text"><i class="fa fa-calendar"></i> <span class="happening-date"></span></p>
-						</div>
-						<a href="#" class="tm-tours-box-2-link">Book Now</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 col-xxs-12">
-					<div class="tm-tours-box-2">
-						<img src="img/index-05.jpg" alt="image" class="img-responsive">
-						<div class="tm-tours-box-2-info">
-							<h3 class="margin-bottom-15">Konkan Railway </h3>
-							<div class="tm-rating"></div>
-							<p class="gray-text"><i class="fa fa-calendar"></i> <span class="happening-date"></span></p>
-						</div>
-						<a href="#" class="tm-tours-box-2-link">Book Now</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 col-xxs-12">
-					<div class="tm-tours-box-2">
-						<img src="img/index-06.jpg" alt="image" class="img-responsive">
-						<div class="tm-tours-box-2-info">
-							<h3 class="margin-bottom-15">Meghalaya forests </h3>
-							<div class="tm-rating"></div>
-							<p class="gray-text"><i class="fa fa-calendar"></i> <span class="happening-date"></span></p>
-						</div>
-						<a href="#" class="tm-tours-box-2-link" id="special2">Book Now</a>
-
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<p class="home-description">Our special packages offer more tremendous experience for travellers
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
--->
-
-
-<div class="elfsight-app-7c6f77a0-6583-4877-9f5d-a8e53991b9ff" data-elfsight-app-lazy></div>
+	<a href="https:/wa.me/+2348083879728"  target="_blank" class="whatsapp_float"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
 	<!-- footer -->
 	<footer style=" ">
 		<div class="container main_view">
@@ -342,7 +286,7 @@
 							<a target="_blank" href="https://twitter.com/iterwesttravels"><i
 									class="fa-brands fa-x-twitter"></i></a>
 						</li>
-						
+
 						<li>
 							<a target="_blank" href="https://www.youtube.com/@iterwesttravels/xregexp"><i
 									class="fa fa-youtube"></i></a>
@@ -356,7 +300,8 @@
 									class="fa fa-instagram"></i></a>
 						</li>
 					</ul>
-					<p>Iterwest Travels is emerging as one of the leading online travel platforms based in Lagos, Nigeria.
+					<p>Iterwest Travels is emerging as one of the leading online travel platforms based in Lagos,
+						Nigeria.
 						Our foray into the digital realm is fueled by a strong passion and a steadfast commitment to
 						fostering sustainability within the global travel sector.</p>
 				</div>
@@ -410,7 +355,7 @@
 										<li>
 											<a href="./privacypolicy.html">Privacy Policy</a>
 										</li>
-										
+
 										<!-- <li>
 											<a target="_blank" href="https://www.walztravels.com/Medic-Trip">Medic Trip</a>
 										</li> -->
@@ -428,7 +373,7 @@
 										<div class="row">
 											<div class="col-2 col-sm-1 col-md-2">
 												<div>
-													<p><i  class="fa fa-phone"></i></p>
+													<p><i class="fa fa-phone"></i></p>
 												</div>
 											</div>
 											<div class="col-10 col-sm-11 col-md-10 xs-pl-0">
@@ -448,7 +393,7 @@
 										<div class="col-10 col-sm-11 col-md-10 xs-pl-0">
 											<p> <a href="mailto:info@walztravels.com">info@iterwesttravels.com</a>
 											</p>
-											
+
 										</div>
 									</div>
 
@@ -464,7 +409,7 @@
 											</div>
 											<div class="col-10 col-sm-11 col-md-10 xs-pl-0">
 												<p>Lagos, Nigeria <br>
-													 Doha, Qatar <br> Berlin, Germany</p>
+													Doha, Qatar <br> Berlin, Germany</p>
 											</div>
 										</div>
 									</a>
@@ -494,105 +439,171 @@
 		</div>
 	</footer>
 
+	<script src="https://kit.fontawesome.com/e9cf5a296c.js" crossorigin="anonymous" defer></script>
 
-
-
-	<!-- Scripts -->
-	<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-	
 	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			const contactForm = document.getElementById('contact-form');
-			const successWrapper = document.getElementById('success-wrapper');
-	
-			function toggleSections(isSuccessVisible) {
-				if (isSuccessVisible) {
-					contactForm.style.display = "none";
-					successWrapper.style.display = "block";
-				} else {
-					contactForm.style.display = "block";
-					successWrapper.style.display = "none";
-				}
-			}
-	
-			contactForm.addEventListener('submit', function(e) {
-				e.preventDefault();
-				const formData = new FormData(contactForm);
-				const object = Object.fromEntries(formData);
-				const json = JSON.stringify(object);
-	
-				successWrapper.innerHTML = "Please wait...";
-	
-				fetch('https://api.web3forms.com/submit', {
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json',
-						'Accept': 'application/json'
-					},
-					body: json
-				})
-				.then(async(response) => {
+		const form = document.getElementById('newsletter1-form');
+		const newslettersuccessWrapper = document.getElementById('newslettersuccess-wrapper');
+
+		form.addEventListener('submit', function (e) {
+			e.preventDefault();
+			const formData = new FormData(form);
+			const object = Object.fromEntries(formData);
+			const json = JSON.stringify(object);
+
+			newslettersuccessWrapper.innerHTML = "Please wait...";
+
+			fetch('https://api.web3forms.com/submit', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+					'Accept': 'application/json'
+				},
+				body: json
+			})
+				.then(async (response) => {
 					let json = await response.json();
 					if (response.status == 200) {
 						// If the request is successful, display the success message
-						toggleSections(true);
-						successWrapper.innerHTML = `
-							<h2 class="success-header">Thanks for contacting Iterwest travels!</h2>
-							<p class="success-msg">We will get back to you within 24 hours.</p>
-						`;
+						newslettersuccessWrapper.innerHTML = "Thank you for subscribing to our newsletter!";
+						newslettersuccessWrapper.style.display = 'block';
 					} else {
 						console.log(response);
-						successWrapper.innerHTML = json.message;
+						newslettersuccessWrapper.innerHTML = json.message;
 					}
 				})
 				.catch(error => {
 					console.log(error);
-					successWrapper.innerHTML = "Something went wrong!";
+					newslettersuccessWrapper.innerHTML = "Something went wrong!";
 				})
-				.then(function() {
-					contactForm.reset();
+				.then(function () {
+					form.reset();
 					setTimeout(() => {
-						toggleSections(false);
-					}, 30000);
+						newslettersuccessWrapper.style.display = "none";
+					}, 3000);
 				});
-			});
 		});
 	</script>
-	
-	
-	
-	
 
-	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script> <!-- jQuery -->
+	<script>
+		const flightsForm = document.getElementById('flights-form');
+		const flightssuccessWrapper = document.getElementById('flights-wrapper');
+
+		flightsForm.addEventListener('submit', function (e) {
+			e.preventDefault();
+			const flightsformData = new FormData(flightsForm);
+			const object = Object.fromEntries(flightsformData);
+			const json = JSON.stringify(object);
+
+			flightssuccessWrapper.innerHTML = "Please wait...";
+
+			fetch('https://api.web3forms.com/submit', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+					'Accept': 'application/json'
+				},
+				body: json
+			})
+				.then(async (response) => {
+					let json = await response.json();
+					if (response.status == 200) {
+						// If the request is successful, display the success message
+						flightssuccessWrapper.innerHTML = "Message Received. Please check your email within 24 hours!";
+						flightssuccessWrapper.style.display = 'block';
+					} else {
+						console.log(response);
+						flightssuccessWrapper.innerHTML = json.message;
+					}
+				})
+				.catch(error => {
+					console.log(error);
+					flightssuccessWrapper.innerHTML = "Something went wrong!";
+				})
+				.then(function () {
+					flightsForm.reset();
+					setTimeout(() => {
+						flightssuccessWrapper.style.display = "none";
+					}, 3000);
+				});
+		});
+	</script>
+
+	<script>
+		const tourForm = document.getElementById('tour-form');
+		const toursuccessWrapper = document.getElementById('tour-wrapper');
+
+		tourForm.addEventListener('submit', function (e) {
+			e.preventDefault();
+			const tourformData = new FormData(tourForm);
+			const object = Object.fromEntries(tourformData);
+			const json = JSON.stringify(object);
+
+			toursuccessWrapper.innerHTML = "Please wait...";
+
+			fetch('https://api.web3forms.com/submit', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+					'Accept': 'application/json'
+				},
+				body: json
+			})
+				.then(async (response) => {
+					let json = await response.json();
+					if (response.status == 200) {
+						// If the request is successful, display the success message
+						toursuccessWrapper.innerHTML = "Message Received. Please check your email within 24 hours!";
+						toursuccessWrapper.style.display = 'block';
+					} else {
+						console.log(response);
+						toursuccessWrapper.innerHTML = json.message;
+					}
+				})
+				.catch(error => {
+					console.log(error);
+					toursuccessWrapper.innerHTML = "Something went wrong!";
+				})
+				.then(function () {
+					tourForm.reset();
+					setTimeout(() => {
+						toursuccessWrapper.style.display = "none";
+					}, 3000);
+				});
+		});
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" async></script>
+
 	<script type="text/javascript" src="js/scrollToTop.js"></script> <!-- Scroll To Top -->
-	<script type="text/javascript" src="js/moment.js"></script> <!-- moment.js -->
-	<script type="text/javascript" src="js/bootstrap.min.js"></script> <!-- bootstrap js -->
-	<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
-	<!-- bootstrap date time picker js, http://eonasdan.github.io/bootstrap-datetimepicker/ -->
-	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-	<script type="text/javascript" src="js/templatemo-script.js"></script> <!-- Templatemo Script -->
-	<script type="text/javascript" src="js/update-copyrightYear.js"></script> <!--Updating the copyright year-->
+	<script type="text/javascript" src="js/moment.js" defer></script>
+
+	<script type="text/javascript" src="js/jquery.flexslider-min.js" defer></script>
+
+	<script type="text/javascript" src="js/templatemo-script.js" defer></script> <!-- Templatemo Script -->
+	<script type="text/javascript" src="js/update-copyrightYear.js" defer></script> <!--Updating the copyright year-->
+
 	<script>
 		// HTML document is loaded. DOM is ready.
 		$(function () {
-
 			$('#hotelCarTabs a').click(function (e) {
-				e.preventDefault()
-				$(this).tab('show')
-			})
+				e.preventDefault();
+				$(this).tab('show');
+			});
 
 			$('.date').datetimepicker({
 				format: 'MM/DD/YYYY'
 			});
 			$('.date-time').datetimepicker();
 
-			// https://css-tricks.com/snippets/jquery/smooth-scrolling/
-			$('a[href*=#]:not([href=#])').click(function () {
+			// Smooth scrolling
+			$('a[href*="\\#"]:not([href="\\#"])').click(function () {
 				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 					var target = $(this.hash);
 					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 					if (target.length) {
-						$('html,body').animate({
+						$('html, body').animate({
 							scrollTop: target.offset().top
 						}, 1000);
 						return false;
@@ -602,32 +613,14 @@
 		});
 
 		// Load Flexslider when everything is loaded.
-		$(window).load(function () {
-			$('.flexslider').flexslider({
-				controlNav: false
-			});
-		});
-
-		// random date within next one year for special offer
-		$('.happening-date').each(function () {
-			var randomDate = moment().add(Math.floor(Math.random() * 365), 'days').format('MMMM Do YYYY');
-			$(this).html(randomDate);
-		});
-
-		// star rating
-		$('.tm-rating').each(function () {
-			var rating = Math.floor(Math.random() * 5) + 1;
-			var i = 0;
-			for (i = 0; i < rating; i++) {
-				$(this).append('<i class="fa fa-star" style="color: #fdcf00"></i>');
-			}
-			for (i = 0; i < (5 - rating); i++) {
-				$(this).append('<i class="fa fa-star" style="color: #949494"></i>');
-			}
-		});
-
-		// $('happening-date').text(moment().add(Math.floor(Math.random() * 365), 'days').format('MMMM Do YYYY'));
+		$(document).ready(function() {
+    // Initialize Flexslider on elements with the class .flexslider
+    $('.flexslider').flexslider({
+        controlNav: false
+    });
+});
 	</script>
+
 	<!-- Preloader Script -->
 	<script type="text/javascript">
 		document.addEventListener('load', preLoader())
@@ -637,10 +630,32 @@
 			$('body').removeClass('loading');
 		}
 	</script>
+	<script>
+		$(document).ready(function () {
+			$('.navi-link').click(function () {
+				var tab_id = $(this).attr('href');
+				$('.tab-pane').removeClass('active');
+				$(tab_id).addClass('active');
+			});
+		});
 
-	
-
-
+	</script>
+	<script>
+		// JavaScript to handle the click event and change styles
+		document.addEventListener("DOMContentLoaded", function () {
+			var tabs = document.querySelectorAll('.navi-link');
+			tabs.forEach(function (tab) {
+				tab.addEventListener('click', function () {
+					// Remove active class from all tabs
+					tabs.forEach(function (t) {
+						t.classList.remove('active-tab');
+					});
+					// Add active class to clicked tab
+					this.classList.add('active-tab');
+				});
+			});
+		});
+	</script>
 	<script type="text/javascript" src="./js/onscrollReveal.js"></script>
 </body>
 

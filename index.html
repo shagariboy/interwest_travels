@@ -13,11 +13,17 @@
 	<style>
 		@font-face {
 			font-family: "Jotia W00 Regular";
-			src: url("https://db.onlinewebfonts.com/c/09fc87e1ac5bbdeb5c42b2c1ec4f780f?family=Jotia+W00+Regular");
-			/* Specify the font-display property */
+			src: url("https://db.onlinewebfonts.com/t/09fc87e1ac5bbdeb5c42b2c1ec4f780f.eot");
+			src: url("https://db.onlinewebfonts.com/t/09fc87e1ac5bbdeb5c42b2c1ec4f780f.eot?#iefix")format("embedded-opentype"),
+				url("https://db.onlinewebfonts.com/t/09fc87e1ac5bbdeb5c42b2c1ec4f780f.woff")format("woff"),
+				url("https://db.onlinewebfonts.com/t/09fc87e1ac5bbdeb5c42b2c1ec4f780f.woff2")format("woff2"),
+				url("https://db.onlinewebfonts.com/t/09fc87e1ac5bbdeb5c42b2c1ec4f780f.ttf")format("truetype"),
+				url("https://db.onlinewebfonts.com/t/09fc87e1ac5bbdeb5c42b2c1ec4f780f.svg#Jotia W00 Regular")format("svg");
+			font-weight: normal;
+			font-style: normal;
 			font-display: swap;
-			/* or fallback, optional */
 		}
+
 
 		body {
 			font-family: "Jotia W00 Regular", serif;
@@ -27,17 +33,18 @@
 	<link href="https://db.onlinewebfonts.com/c/09fc87e1ac5bbdeb5c42b2c1ec4f780f?family=Jotia+W00+Regular"
 		rel="stylesheet">
 
-	<link href="css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
-	<link href="css/flexslider.css" rel="stylesheet">
-	<link href="css/templatemo-style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css"
+		integrity="sha512-DD6Lm09YDHzhW3K4eLJ9Y7sFrBwtCF+KuSWOLYFqKsZ6RX4ifCu9vWqM4R+Uy++aBWe6wD4csgQRzGKp5vP6tg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" async />
+	<link href="css/bootstrap.min.css" rel="stylesheet" defer>
+	<link href="css/flexslider.css" rel="stylesheet" async>
+	<link href="css/templatemo-style.css" rel="stylesheet" async>
 	<link href="css/scrollToTop.css" rel="stylesheet">
-	<link href="css/hero.css" rel="stylesheet">
+	<link href="css/hero.css" rel="stylesheet" disabled async>
 
-	<link href="css/logo.css" rel="stylesheet">
+	<link href="css/logo.css" rel="stylesheet" async>
 	<!--Link to footer.css-->
-	<link href="css/footer.css" rel="stylesheet">
+	<link href="css/footer.css" rel="stylesheet" defer>
 
 
 	<!-- Favicons -->
@@ -52,7 +59,7 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		crossorigin="anonymous" referrerpolicy="no-referrer" defer />
 </head>
 
 <body class="tm-gray-bg">
@@ -68,8 +75,7 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-4 col-sm-3 tm-site-name-container">
 					<a href="index.html" class="tm-site-name">
-						<img loading="lazy" src="img/iterwest_travels_logo.png" width="250" height="auto" id="logo"
-							alt="logo">
+						<img src="img/iterwest_travels_logo.png" width="250" height="auto" id="logo" alt="logo">
 					</a>
 				</div>
 				<div class="col-lg-9 col-md-8 col-sm-9">
@@ -107,21 +113,21 @@
 						<h1 class="tm-banner-title">Discover Our Destinations</h1>
 						<p class="tm-banner-subtitle">Explore stunning destinations worldwide</p>
 					</div>
-					<img loading="lazy" src="img/banner1.jpg" alt="Discover Our Destinations banner" />
+					<img src="img/banner1.jpg" alt="Discover Our Destinations banner" />
 				</li>
 				<li>
 					<div class="tm-banner-inner">
 						<h1 class="tm-banner-title">Discover unbeatable offers!</h1>
 						<p class="tm-banner-subtitle">Explore extraordinary destinations at incredible prices</p>
 					</div>
-					<img loading="lazy" src="img/banner2.jpg" alt="Discover unbeatable offers banner" />
+					<img src="img/banner2.jpg" alt="Discover unbeatable offers banner" />
 				</li>
 				<li>
 					<div class="tm-banner-inner">
 						<h1 class="tm-banner-title">Embark on Your Next Adventure!</h1>
 						<p class="tm-banner-subtitle">Begin Your Vacation with Iterwest Travels </p>
 					</div>
-					<img loading="lazy" src="img/banner3.jpg" alt="Discover unbeatable offers banner" />
+					<img src="img/banner3.jpg" alt="Discover unbeatable offers banner" />
 				</li>
 			</ul>
 		</div>
@@ -210,7 +216,7 @@
 
 									<div class="form-item form-item3">
 										<input id="travel-date" type="text" onfocus="(this.type='date')"
-											onblur="(this.type='text')" name="travel-date" placeholder="Travel Date"
+											onblur="(this.type='text')" name="travel-date" placeholder="dd/mm/yyyy"
 											required />
 									</div>
 
@@ -265,7 +271,7 @@
 
 									<div class="form-item form-item3">
 										<input id="travel-date" type="text" onfocus="(this.type='date')"
-											onblur="(this.type='text')" name="travel-date" placeholder="Travel Date"
+											onblur="(this.type='text')" name="travel-date" placeholder="dd/mm/yyyy"
 											required />
 									</div>
 
@@ -794,9 +800,7 @@
 
 
 	</section>
-
-	<div class="elfsight-app-7c6f77a0-6583-4877-9f5d-a8e53991b9ff" data-elfsight-app-lazy></div>
-
+	<a href="https:/wa.me/+2348083879728"  target="_blank" class="whatsapp_float"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
 	<!-- footer -->
 	<footer style=" ">
 		<div class="container main_view">
@@ -960,9 +964,9 @@
 
 
 	<!-- footer -->
-	
+
 	<script src="https://kit.fontawesome.com/e9cf5a296c.js" crossorigin="anonymous" defer></script>
-	<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+
 
 	<script>
 		const form = document.getElementById('newsletter1-form');
@@ -1097,18 +1101,16 @@
 	</script>
 
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" async></script>
 
-	<script type="text/javascript" src="js/scrollToTop.js" defer></script> <!-- Scroll To Top -->
+	<script type="text/javascript" src="js/scrollToTop.js"></script> <!-- Scroll To Top -->
 	<script type="text/javascript" src="js/moment.js" defer></script>
-	<script type="text/javascript" src="js/bootstrap.min.js" defer></script> <!-- bootstrap js -->
 
 	<script type="text/javascript" src="js/jquery.flexslider-min.js" defer></script>
 
 	<script type="text/javascript" src="js/templatemo-script.js" defer></script> <!-- Templatemo Script -->
 	<script type="text/javascript" src="js/update-copyrightYear.js" defer></script> <!--Updating the copyright year-->
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 	<script>
 		// HTML document is loaded. DOM is ready.
 		$(function () {
@@ -1138,12 +1140,12 @@
 		});
 
 		// Load Flexslider when everything is loaded.
-		$(window).on('load', function () {
-			// For images only
-			$('.flexslider').flexslider({
-				controlNav: false
-			});
-		});
+		$(document).ready(function() {
+    // Initialize Flexslider on elements with the class .flexslider
+    $('.flexslider').flexslider({
+        controlNav: false
+    });
+});
 	</script>
 
 	<!-- Preloader Script -->
@@ -1181,7 +1183,8 @@
 			});
 		});
 	</script>
-	<script type="text/javascript" src="./js/onscrollReveal.js" defer></script>
+	<script type="text/javascript" src="./js/onscrollReveal.js"></script>
+
 </body>
 
 </html>
